@@ -1,6 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 
-import { CreatePost } from "~/app/_components/create-post";
+import { CreatePost } from "~/components/create-post";
+import { Button } from "~/components/ui/button";
 import { getServerAuthSession } from "~/server/auth";
 import { api } from "~/trpc/server";
 
@@ -9,58 +11,45 @@ export default async function Home() {
   const session = await getServerAuthSession();
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-        <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
-          Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
-        </h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 hover:bg-white/20"
-            href="https://create.t3.gg/en/usage/first-steps"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">First Steps →</h3>
-            <div className="text-lg">
-              Just the basics - Everything you need to know to set up your
-              database and authentication.
-            </div>
-          </Link>
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 hover:bg-white/20"
-            href="https://create.t3.gg/en/introduction"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">Documentation →</h3>
-            <div className="text-lg">
-              Learn more about Create T3 App, the libraries it uses, and how to
-              deploy it.
-            </div>
-          </Link>
-        </div>
-        <div className="flex flex-col items-center gap-2">
-          <p className="text-2xl text-white">
-            {hello ? hello.greeting : "Loading tRPC query..."}
+    <div className="flex min-h-full w-full bg-gradient-to-b from-rose-950 to-fuchsia-800">
+      <div className="mt-40 flex flex-col pl-32">
+        <Title />
+        <div className="mt-3 w-8/12 opacity-60">
+          <h3 className="font-poppins text-3xl font-extrabold leading-[52.48px] text-white">
+            Can't beat influencers? Become their master!
+          </h3>
+          <p className="font-poppins w-10/12 text-2xl font-light leading-[52.48px] text-white">
+            Most influencers you idolize craft their fame with lies, raking in
+            cash by the minute. Why watch from the sidelines? <br />
           </p>
-
-          <div className="flex flex-col items-center justify-center gap-4">
-            <p className="text-center text-2xl text-white">
-              {session && <span>Logged in as {session.user?.name}</span>}
-            </p>
-            <Link
-              href={session ? "/api/auth/signout" : "/api/auth/signin"}
-              className="rounded-full bg-white/10 px-10 py-3 font-semibold no-underline transition hover:bg-white/20"
-            >
-              {session ? "Sign out" : "Sign in"}
-            </Link>
-          </div>
         </div>
-
-        <CrudShowcase />
       </div>
-    </main>
+      <Image
+        src="/phone.png"
+        alt="tRPC logo"
+        width={650}
+        height={650}
+        className="absolute bottom-0 right-0"
+      ></Image>
+    </div>
   );
 }
+
+const Title = () => {
+  return (
+    <div className="relative h-fit">
+      <h1 className="font-bebas-neue absolute left-[-12px] top-[8px] m-0 p-0 text-[240px] font-normal leading-none text-transparent text-white">
+        Fake it{" "}
+      </h1>
+      <h1 className="font-bebas-neue text-stroke z-10 m-0 stroke-white p-0 text-[240px] font-normal leading-none text-transparent">
+        Fake it{" "}
+      </h1>
+      <h2 className="font-bebas-neue text-stroke m-0 ml-72 mt-[-36px] stroke-white p-0 text-[60px] font-normal leading-none text-transparent">
+        'til you bank it!
+      </h2>
+    </div>
+  );
+};
 
 async function CrudShowcase() {
   const session = await getServerAuthSession();
