@@ -15,7 +15,7 @@ export default async function Home() {
       <div className="mt-40 flex flex-col pl-32">
         <Title />
         <div className="mt-3 w-8/12 opacity-60">
-          <h3 className="font-poppins text-3xl font-extrabold leading-[52.48px] text-white">
+          <h3 className="font-poppins text-3xl font-semibold leading-[52.48px] text-white">
             Can't beat influencers? Become their master!
           </h3>
           <p className="font-poppins w-10/12 text-2xl font-light leading-[52.48px] text-white">
