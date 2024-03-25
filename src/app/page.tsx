@@ -31,6 +31,10 @@ export default async function Home() {
               Most influencers you idolize craft their fame with lies, raking in
               cash by the minute. Why watch from the sidelines? <br />
             </p>
+            <div className="flex flex-row gap-4">
+              <button className="btn btn-white">Shape it</button>
+              <button className="btn btn-outline btn-[#ffff]">Primary</button>
+            </div>
           </div>
         </div>
       </div>
