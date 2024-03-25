@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { CreatePost } from "~/components/create-post";
-import { Button } from "~/components/ui/button";
 import { getServerAuthSession } from "~/server/auth";
 import { api } from "~/trpc/server";
 
@@ -11,32 +10,34 @@ export default async function Home() {
   const session = await getServerAuthSession();
 
   return (
-    <div className="flex min-h-full w-full bg-gradient-to-b from-rose-950 to-fuchsia-800">
-      <span className="font-bebas-neue absolute z-0 text-[645px] font-normal leading-[632.10px] text-white opacity-[.1]">
-        AI.Chicks
-      </span>
-      <div className="z-10 mt-60 flex flex-col pl-32">
-        <Title />
-        <div className="mt-3 w-8/12 opacity-60">
-          <h3 className="font-poppins text-3xl font-semibold leading-[52.48px] text-white">
-            Can't beat influencers? Become their master!
-          </h3>
-          <p className="font-poppins w-10/12 text-2xl font-light leading-[52.48px] text-white">
-            Most influencers you idolize craft their fame with lies, raking in
-            cash by the minute. Why watch from the sidelines? <br />
-          </p>
+    <div className="flex flex-col min-h-full w-full bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0">
+      <div className="relative min-w-screen h-52 z-0">
+        <Image src="/AI.Chicks.svg" alt="banner" fill={true} sizes="100vh" ></Image>
+      </div>
+      <div className="absolute">       
+        <div className="z-10 mt-40 flex flex-col pl-32">
+          <Title />
+          <div className="mt-3 w-8/12 opacity-60">
+            <h3 className="font-poppins text-3xl font-semibold leading-[52.48px] text-white">
+              Can't beat influencers? Become their master!
+            </h3>
+            <p className="font-poppins w-10/12 text-2xl font-light leading-[52.48px] text-white">
+              Most influencers you idolize craft their fame with lies, raking in
+              cash by the minute. Why watch from the sidelines? <br />
+            </p>
+          </div>
         </div>
       </div>
-      <Image
-        src="/phone.png"
-        alt="tRPC logo"
-        width={650}
-        height={650}
-        className="absolute bottom-0 right-0 z-10"
-      ></Image>
-      <div className="relative h-[1153.50px] w-[1129px]">
-        <div className="absolute bottom-0 left-0 h-[1075px] w-[1129px] rounded-full bg-fuchsia-900 blur-[425.47px]" />
-      </div>{" "}
+        <Image
+          src="/phone.png"
+          alt="tRPC logo"
+          width={650}
+          height={650}
+          className="absolute bottom-0 right-0 z-100"
+        ></Image>
+        {/* <div className="relative h-[1153.50px] w-[1129px]">
+          <div className="absolute bottom-0 right-0 h-[1075px] w-[1129px] rounded-full bg-fuchsia-900 blur-[425.47px]" />
+        </div> */}
     </div>
   );
 }
