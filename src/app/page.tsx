@@ -11,8 +11,14 @@ export default async function Home() {
 
   return (
     <div className="flex flex-col min-h-full w-full bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0">
-      <div className="relative min-w-screen h-52 z-0">
-        <Image src="/AI.Chicks.svg" alt="banner" fill={true} sizes="100vh" ></Image>
+      <div className="relative w-full h-[550px] ml-10 mt-10">
+        <Image
+          src="/AI.Chicks.svg"
+          alt="banner"
+          layout="fill"
+          objectFit="contain"
+          quality={100}
+        />
       </div>
       <div className="absolute">       
         <div className="z-10 mt-40 flex flex-col pl-32">
@@ -29,10 +35,10 @@ export default async function Home() {
         </div>
       </div>
         <Image
-          src="/phone.png"
+          src="/phone2.png"
           alt="tRPC logo"
-          width={650}
-          height={650}
+          width={750}
+          height={750}
           className="absolute bottom-0 right-0 z-100"
         ></Image>
         {/* <div className="relative h-[1153.50px] w-[1129px]">
@@ -48,7 +54,14 @@ const Title = () => {
       <h1 className="font-bebas-neue absolute left-[-12px] top-[8px] m-0 p-0 text-[240px] font-normal leading-none text-transparent text-white">
         Fake it{" "}
       </h1>
-      <h1 className="font-bebas-neue text-stroke z-10 m-0 stroke-white p-0 text-[240px] font-normal leading-none text-transparent">
+      <h1 
+        className="font-bebas-neue text-stroke z-10 m-0 stroke-white p-0 text-[240px] font-normal leading-none text-transparent"
+        style={{
+          WebkitMaskImage: "linear-gradient(to bottom, white 50%, transparent 100%)",
+          maskImage: "linear-gradient(to bottom, white 50%, transparent 100%)",
+          height: "100%",
+        }}
+      >
         Fake it{" "}
       </h1>
       <h2 className="font-bebas-neue text-stroke m-0 ml-72 mt-[-36px] stroke-white p-0 text-[60px] font-normal leading-none text-transparent">
@@ -57,6 +70,7 @@ const Title = () => {
     </div>
   );
 };
+
 
 async function CrudShowcase() {
   const session = await getServerAuthSession();
