@@ -21,10 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="m-0 h-full w-full overflow-hidden p-0">
-      <body
-        className={`font-sans ${inter.variable} m-0 h-full w-full overflow-hidden p-0`}
-      >
+    <html lang="en">
+      <body className={`font-sans ${inter.variable} overscroll-none`}>
         <TRPCReactProvider>{children}</TRPCReactProvider>
       </body>
     </html>

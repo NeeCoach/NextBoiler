@@ -10,49 +10,59 @@ export default async function Home() {
   const session = await getServerAuthSession();
 
   return (
-    <div className="flex min-h-full w-full flex-col bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0">
-      <div className="relative ml-10 h-[550px] w-full">
-        <Image
-          src="/AI.Chicks.svg"
-          alt="banner"
-          layout="fill"
-          objectFit="contain"
-          quality={100}
-        />
-      </div>
-      <div className="absolute z-10">
-        <div className="mt-40 flex flex-col pl-32">
-          <Title />
-          <div className="mt-3 w-8/12">
-            <h3 className="font-poppins text-3xl font-semibold leading-[52.48px] text-white">
-              Can't beat influencers? Become their master!
-            </h3>
-            <p className="font-poppins w-10/12 text-2xl font-light leading-[52.48px] text-white opacity-60">
-              Most influencers you idolize craft their fame with lies, raking in
-              cash by the minute. Why watch from the sidelines? <br />
-            </p>
-            <div className="flex flex-row gap-4">
-              <button className="btn btn-white">Shape it</button>
-              <button className="btn btn-outline btn-[#ffff]">Primary</button>
+    <>
+      <section className="flex h-screen w-full flex-col bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0">
+        <div className="relative ml-10 h-[550px] w-full">
+          <Image
+            src="/AI.Chicks.svg"
+            alt="banner"
+            layout="fill"
+            objectFit="contain"
+            quality={100}
+          />
+        </div>
+        <div className="absolute mx-36 flex sm:flex-col-reverse xl:flex-row">
+          <div className="animate-slideInFromLeftFadeIn mt-40 flex flex-col">
+            <Title />
+            <div className="mt-3">
+              <h3 className="font-poppins text-3xl font-semibold leading-[52.48px] text-white">
+                Can't beat influencers? Become their master!
+              </h3>
+              <p className="font-poppins w-10/12 text-2xl font-light text-white opacity-60">
+                Most influencers you idolize craft their fame with lies, raking
+                in cash by the minute. Why watch from the sidelines? <br />
+              </p>
+              <div className="flex flex-row gap-4">
+                <button className="btn btn-white">Shape it</button>
+                <button className="btn btn-outline btn-[#ffff]">Primary</button>
+              </div>
             </div>
           </div>
+          <Image
+            src="/phone.png"
+            alt="tRPC logo"
+            width={750}
+            height={750}
+            className="z-100 animate-slideInFromRightFadeIn"
+          ></Image>
         </div>
-      </div>
-      <Image
-  src="/phone.png"
-  alt="tRPC logo"
-  width={750}
-  height={750}
-  className="z-100 absolute bottom-0 right-48 animate-slideInFromRightFadeIn"
-></Image>
-
-    </div>
+      </section>
+      <section className="flex h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0">
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="font-bebas-neue text-6xl text-white">The Problem</h1>
+          <p className="font-poppins w-1/2 text-center text-2xl text-white opacity-60">
+            Most influencers you idolize craft their fame with lies, raking in
+            cash by the minute. Why watch from the sidelines?
+          </p>
+        </div>
+      </section>
+    </>
   );
 }
 
 const Title = () => {
   return (
-    <div className="relative h-fit animate-slideInFromLeftFadeIn">
+    <div className="relative h-fit">
       <h1 className="font-bebas-neue absolute left-[-12px] top-[8px] m-0 p-0 text-[14vw] font-normal leading-none text-transparent text-white">
         Fake it{" "}
       </h1>
@@ -67,7 +77,7 @@ const Title = () => {
       >
         Fake it{" "}
       </h1>
-      <h2 className="font-bebas-neue text-stroke ml-96 mt-10 stroke-white p-0 text-[2.5vw] font-normal leading-none text-transparent">
+      <h2 className="font-bebas-neue text-stroke mt-2 stroke-white p-0 text-[2.5vw] font-normal leading-none text-transparent xl:ml-72">
         'til you bank it!
       </h2>
     </div>
