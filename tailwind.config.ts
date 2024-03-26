@@ -78,10 +78,21 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "slideInFromRightFadeIn": {
+          from: { transform: "translateX(300px)", opacity: "0" },
+          to: { transform: "translateX(0)", opacity: "1" },
+        },
+        "slideInFromLeftFadeIn": {
+          from: { transform: "translateX(-300px)", opacity: "0" },
+          to: { transform: "translateX(0)", opacity: "1" },
+        },
+          
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "slideInFromRightFadeIn": 'slideInFromRightFadeIn 1s ease-out',
+        "slideInFromLeftFadeIn": 'slideInFromLeftFadeIn 0.6s ease-out',
       },
     },
   },

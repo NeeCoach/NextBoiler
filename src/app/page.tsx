@@ -39,19 +39,20 @@ export default async function Home() {
         </div>
       </div>
       <Image
-        src="/phone.png"
-        alt="tRPC logo"
-        width={750}
-        height={750}
-        className="z-100 absolute bottom-0 right-24"
-      ></Image>
+  src="/phone.png"
+  alt="tRPC logo"
+  width={750}
+  height={750}
+  className="z-100 absolute bottom-0 right-48 animate-slideInFromRightFadeIn"
+></Image>
+
     </div>
   );
 }
 
 const Title = () => {
   return (
-    <div className="relative h-fit">
+    <div className="relative h-fit animate-slideInFromLeftFadeIn">
       <h1 className="font-bebas-neue absolute left-[-12px] top-[8px] m-0 p-0 text-[14vw] font-normal leading-none text-transparent text-white">
         Fake it{" "}
       </h1>
@@ -66,7 +67,7 @@ const Title = () => {
       >
         Fake it{" "}
       </h1>
-      <h2 className="font-bebas-neue text-stroke ml-80 mt-2 stroke-white p-0 text-[2.5vw] font-normal leading-none text-transparent">
+      <h2 className="font-bebas-neue text-stroke ml-96 mt-10 stroke-white p-0 text-[2.5vw] font-normal leading-none text-transparent">
         'til you bank it!
       </h2>
     </div>
