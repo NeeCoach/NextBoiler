@@ -12,7 +12,7 @@ export default async function Home() {
   return (
     <>
       <section className="flex h-screen w-full flex-col bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0">
-        <div className="relative ml-10 h-[550px] w-full">
+        <div className="relative h-[550px] w-full overflow-hidden">
           <Image
             src="/AI.Chicks.svg"
             alt="banner"
@@ -67,7 +67,7 @@ const Title = () => {
         Fake it{" "}
       </h1>
       <h1
-        className="font-bebas-neue text-stroke z-10 m-0 stroke-white p-0 text-[14vw] font-normal leading-none text-transparent"
+        className="font-bebas-neue text-stroke z-10 m-0 mb-6 stroke-white p-0 text-[14vw] font-normal leading-none text-transparent"
         style={{
           WebkitMaskImage:
             "linear-gradient(to bottom, white 60%, transparent 100%)",
@@ -77,9 +77,11 @@ const Title = () => {
       >
         Fake it{" "}
       </h1>
-      <h2 className="font-bebas-neue text-stroke mt-2 stroke-white p-0 text-[2.5vw] font-normal leading-none text-transparent xl:ml-72">
+      <div className="flex flex-row justify-center">
+      <h2 className="font-bebas-neue text-stroke stroke-white p-0 text-[2.5vw] font-normal leading-none text-transparent">
         'til you bank it!
       </h2>
+      </div>
     </div>
   );
 };
