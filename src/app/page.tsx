@@ -1,18 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Logos, Title } from "~/components/custom";
 
 import { CreatePost } from "~/components/create-post";
 import { getServerAuthSession } from "~/server/auth";
 import { api } from "~/trpc/server";
 
 export default async function Home() {
-  const hello = await api.post.hello({ text: "from tRPC" });
-  const session = await getServerAuthSession();
+  // const hello = await api.post.hello({ text: "from tRPC" });
+  // const session = await getServerAuthSession();
 
   return (
     <>
-      <section className="flex h-screen w-full flex-col bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0">
-        <div className="relative h-[550px] w-full overflow-hidden">
+      <section className="flex h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0">
+        <div className="absolute top-0 h-[550px] w-full overflow-hidden">
           <Image
             src="/AI.Chicks.svg"
             alt="banner"
@@ -21,30 +22,52 @@ export default async function Home() {
             quality={100}
           />
         </div>
-        <div className="absolute mx-36 flex sm:flex-col-reverse xl:flex-row">
-          <div className="animate-slideInFromLeftFadeIn mt-40 flex flex-col">
+        <div className="mx-56 flex items-center justify-center sm:flex-col xl:flex-row">
+          <div className="flex flex-col items-center justify-center">
+            <Image
+              src="/phone.png"
+              alt="tRPC logo"
+              width={1300}
+              height={1300}
+              className="z-100 animate-slideInFromLeftFadeIn"
+              object-fit="cover"
+            ></Image>
+          </div>
+          <div className="animate-slideInFromRightFadeIn flex h-fit flex-col">
             <Title />
-            <div className="mt-3">
-              <h3 className="font-poppins text-3xl font-semibold leading-[52.48px] text-white">
-                Can't beat influencers? Become their master!
+            <div className="mt-3 w-fit">
+              <h3 className="font-poppins w-fit text-2xl font-semibold leading-[52.48px] text-white">
+                Can&apos;t beat influencers? Become their master!
               </h3>
-              <p className="font-poppins w-10/12 text-2xl font-light text-white opacity-60">
+              <p className="font-poppins mb-6 text-xl font-light text-white opacity-60">
                 Most influencers you idolize craft their fame with lies, raking
                 in cash by the minute. Why watch from the sidelines? <br />
               </p>
-              <div className="flex flex-row gap-4">
-                <button className="btn btn-white">Shape it</button>
-                <button className="btn btn-outline btn-[#ffff]">Primary</button>
+              <div className="flex flex-row">
+                <button className="flew-row flex items-center justify-center gap-2 rounded-md border-2 border-solid border-white bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-1 px-4 shadow-md">
+                  <Image
+                    src="/icon/MagicWand.svg"
+                    width={24}
+                    height={24}
+                    alt="Magic Wand"
+                  ></Image>
+                  <span className="block rounded-md py-2 font-semibold text-white">
+                    Fake it
+                  </span>
+                </button>
               </div>
             </div>
           </div>
-          <Image
-            src="/phone.png"
-            alt="tRPC logo"
-            width={750}
-            height={750}
-            className="z-100 animate-slideInFromRightFadeIn"
-          ></Image>
+        </div>
+        <div className=" absolute bottom-2 flex flex-col items-center justify-center">
+          <div className="font-poppins leading-2 text-center text-sm font-extralight text-white">
+            Work with
+          </div>
+          <div className="flex flex-row items-center justify-center gap-1">
+            {logos.map((logo) => (
+              <Logos key={logo.alt} src={logo.src} alt={logo.alt} />
+            ))}
+          </div>
         </div>
       </section>
       <section className="flex h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0">
@@ -60,31 +83,13 @@ export default async function Home() {
   );
 }
 
-const Title = () => {
-  return (
-    <div className="relative h-fit">
-      <h1 className="font-bebas-neue absolute left-[-12px] top-[8px] m-0 p-0 text-[14vw] font-normal leading-none text-transparent text-white">
-        Fake it{" "}
-      </h1>
-      <h1
-        className="font-bebas-neue text-stroke z-10 m-0 mb-6 stroke-white p-0 text-[14vw] font-normal leading-none text-transparent"
-        style={{
-          WebkitMaskImage:
-            "linear-gradient(to bottom, white 60%, transparent 100%)",
-          maskImage: "linear-gradient(to bottom, white 60%, transparent 100%)",
-          height: "198px",
-        }}
-      >
-        Fake it{" "}
-      </h1>
-      <div className="flex flex-row justify-center">
-      <h2 className="font-bebas-neue text-stroke stroke-white p-0 text-[2.5vw] font-normal leading-none text-transparent">
-        'til you bank it!
-      </h2>
-      </div>
-    </div>
-  );
-};
+const logos = [
+  { src: "/icon/insta.svg", alt: "Vercel Logo" },
+  { src: "/icon/x.svg", alt: "Next.js Logo" },
+  { src: "/icon/tt.svg", alt: "Prisma Logo" },
+  { src: "/icon/of.svg", alt: "tRPC Logo" },
+  { src: "/icon/mym.svg", alt: "Vercel Logo" },
+];
 
 async function CrudShowcase() {
   const session = await getServerAuthSession();
