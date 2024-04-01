@@ -5,6 +5,7 @@ import { Logos, Title } from "~/components/custom";
 import { CreatePost } from "~/components/create-post";
 import { getServerAuthSession } from "~/server/auth";
 import { api } from "~/trpc/server";
+import { SparklesCore } from "~/components/ui/sparkles";
 
 export default async function Home() {
   // const hello = await api.post.hello({ text: "from tRPC" });
@@ -12,36 +13,47 @@ export default async function Home() {
 
   return (
     <>
-      <section className="flex h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0">
+      <section className="z-0 flex h-screen w-full flex-col items-center justify-center p-0">
         <div className="absolute top-0 h-[550px] w-full overflow-hidden">
           <Image
             src="/AI.Chicks.svg"
             alt="banner"
             layout="fill"
-            objectFit="contain"
             quality={100}
+            className="object-contain"
           />
         </div>
-        <div className="mx-56 flex items-center justify-center sm:flex-col xl:flex-row">
-          <div className="flex flex-col items-center justify-center">
+        <div className="absolute inset-0 h-screen w-full">
+          <SparklesCore
+            id="tsparticlesfullpage"
+            background="transparent"
+            minSize={0.6}
+            maxSize={1}
+            particleDensity={30}
+            className="h-full w-full"
+            particleColor="#f3e06a"
+          />
+        </div>
+        <div className="z-10 mx-10 flex flex-col items-center justify-center md:mx-56 md:flex-row">
+          <div className="z-10 flex min-w-fit flex-col items-center justify-center">
             <Image
               src="/phone.png"
               alt="tRPC logo"
-              width={1300}
-              height={1300}
-              className="z-100 animate-slideInFromLeftFadeIn"
+              width={580}
+              height={580}
+              className="animate-slideInFromLeftFadeIn z-10"
               object-fit="cover"
             ></Image>
           </div>
-          <div className="animate-slideInFromRightFadeIn flex h-fit flex-col">
+          <div className="animate-slideInFromRightFadeIn flex h-fit max-w-fit flex-col">
             <Title />
             <div className="mt-3 w-fit">
-              <h3 className="font-poppins w-fit text-2xl font-semibold leading-[52.48px] text-white">
-                Can&apos;t beat influencers? Become their master!
+              <h3 className="font-poppins my-4 w-fit text-2xl font-semibold text-white">
+                Can&apos;t beat influencers trends? Become their master!
               </h3>
               <p className="font-poppins mb-6 text-xl font-light text-white opacity-60">
-                Most influencers you idolize craft their fame with lies, raking
-                in cash by the minute. Why watch from the sidelines? <br />
+                Click, create, conquer – deploy your fake army of AI influencers
+                and let them seduce the net with irresistible allure.
               </p>
               <div className="flex flex-row">
                 <button className="flew-row flex items-center justify-center gap-2 rounded-md border-2 border-solid border-white bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-1 px-4 shadow-md">
@@ -51,7 +63,7 @@ export default async function Home() {
                     height={24}
                     alt="Magic Wand"
                   ></Image>
-                  <span className="block rounded-md py-2 font-semibold text-white">
+                  <span className="block rounded-md py-1 font-semibold text-white">
                     Fake it
                   </span>
                 </button>
@@ -59,7 +71,8 @@ export default async function Home() {
             </div>
           </div>
         </div>
-        <div className=" absolute bottom-2 flex flex-col items-center justify-center">
+        <div className="absolute bottom-0 flex h-60 w-96 animate-pulse flex-row items-end justify-center rounded-full bg-yellow-100 blur-[425.47px]" />
+        <div className="absolute bottom-2 z-10 flex flex-col items-center justify-center">
           <div className="font-poppins leading-2 text-center text-sm font-extralight text-white">
             Work with
           </div>
@@ -70,13 +83,71 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      <section className="flex h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0">
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="font-bebas-neue text-6xl text-white">The Problem</h1>
+      <section className="flex h-screen w-full flex-col p-0">
+        <h1 className="font-bebas-neue mt-8 text-center text-6xl text-white md:mt-16">
+          Section 2 - HOW IT WORKS
+        </h1>
+        <div className="mt-8 flex flex-col items-center justify-center md:mt-16">
           <p className="font-poppins w-1/2 text-center text-2xl text-white opacity-60">
             Most influencers you idolize craft their fame with lies, raking in
             cash by the minute. Why watch from the sidelines?
           </p>
+        </div>
+      </section>
+      <section className="flex h-screen w-full flex-col p-0">
+        <h1 className="font-bebas-neue mt-8 text-center text-6xl text-white md:mt-16">
+          Section 3 - DEMO
+        </h1>
+        <div className="mt-8 flex flex-col items-center justify-center md:mt-16">
+          <p className="font-poppins w-1/2 text-center text-2xl text-white opacity-60">
+            Most influencers you idolize craft their fame with lies, raking in
+            cash by the minute. Why watch from the sidelines?
+          </p>
+        </div>
+      </section>
+      <section className="flex h-screen w-full flex-col p-0">
+        <h1 className="font-bebas-neue mt-8 text-center text-6xl text-white md:mt-16">
+          Section 4 - Pricing
+        </h1>
+        <div className="mt-8 flex flex-col items-center justify-center md:mt-16">
+          <p className="font-poppins w-1/2 text-center text-2xl text-white opacity-60">
+            Most influencers you idolize craft their fame with lies, raking in
+            cash by the minute. Why watch from the sidelines?
+          </p>
+        </div>
+      </section>
+      <section className="flex h-screen w-full flex-col items-center p-0">
+        <h1 className="font-bebas-neue mt-8 text-6xl text-white md:mt-16">
+          FAQ
+        </h1>
+        <div className="flex w-fit flex-col items-center justify-center gap-4 md:mt-16">
+          <div className="collapse-arrow bg-base-200 collapse">
+            <input type="radio" name="my-accordion-2" defaultChecked />
+            <div className="collapse-title text-xl font-medium">
+              Click to open this one and close others
+            </div>
+            <div className="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div className="collapse-arrow bg-base-200 collapse">
+            <input type="radio" name="my-accordion-2" />
+            <div className="collapse-title text-xl font-medium">
+              Click to open this one and close others
+            </div>
+            <div className="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div className="collapse-arrow bg-base-200 collapse">
+            <input type="radio" name="my-accordion-2" />
+            <div className="collapse-title text-xl font-medium">
+              Click to open this one and close others
+            </div>
+            <div className="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
         </div>
       </section>
     </>

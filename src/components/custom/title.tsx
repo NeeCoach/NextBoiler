@@ -2,12 +2,12 @@ export const Title = () => {
   return (
     <div className="flex w-fit flex-col">
       <div className="flex h-fit w-fit flex-col">
-        <div className="relative max-h-[200px] w-fit">
-          <h1 className="font-bebas-neue absolute left-[-12px] top-[8px] m-0 whitespace-nowrap p-0 text-[14rem] font-normal leading-none text-transparent text-white">
+        <div className="relative max-h-[210px] w-fit">
+          <h1 className="font-bebas-neue absolute left-[-12px] top-[8px] m-0 whitespace-nowrap p-0 text-[26vw] font-normal leading-none text-transparent text-white sm:text-[14vw]">
             Fake it{" "}
           </h1>
           <h1
-            className="font-bebas-neue text-stroke z-10 m-0 w-fit whitespace-nowrap stroke-white p-0 text-[14rem] font-normal leading-none text-transparent"
+            className="font-bebas-neue text-stroke z-10 m-0 w-fit whitespace-nowrap stroke-white p-0 text-[26vw] font-normal leading-none text-transparent sm:text-[14vw]"
             style={{
               WebkitMaskImage:
                 "linear-gradient(to bottom, white 60%, transparent 100%)",

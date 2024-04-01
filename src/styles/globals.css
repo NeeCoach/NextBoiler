@@ -78,3 +78,19 @@
     -webkit-text-stroke: 1px rgb(255, 255, 255);
   }
 }
+
+@keyframes GradientBackground {
+  0%,
+  100% {
+    background-position: 70% 0%;
+  }
+  50% {
+    background-position: 31% 100%;
+  }
+}
+
+.animate-bg {
+  background-size: 600% 600%;
+  /* animation: GradientBackground 26s ease infinite; */
+  background-image: linear-gradient(347deg, #86198f, #4c0519);
+}
