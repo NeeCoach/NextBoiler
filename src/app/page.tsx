@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Logos, Title } from "~/components/custom";
+import { Logos, Sparkles, Title } from "~/components/custom";
 
 import { CreatePost } from "~/components/create-post";
 import { getServerAuthSession } from "~/server/auth";
@@ -13,7 +13,7 @@ export default async function Home() {
 
   return (
     <>
-      <section className="z-0 flex h-screen w-full flex-col items-center justify-center p-0">
+      <section className="z-0 flex h-screen w-full flex-col items-center justify-center p-0 bg-gradient-to-b from-rose-950 to-fuchsia-800">
         <div className="absolute top-0 h-[550px] w-full overflow-hidden">
           <Image
             src="/AI.Chicks.svg"
@@ -23,29 +23,10 @@ export default async function Home() {
             className="object-contain"
           />
         </div>
-        <div className="absolute inset-0 h-screen w-full">
-          <SparklesCore
-            id="tsparticlesfullpage"
-            background="transparent"
-            minSize={0.6}
-            maxSize={1}
-            particleDensity={30}
-            className="h-full w-full"
-            particleColor="#f3e06a"
-          />
-        </div>
+        <Sparkles />
         <div className="z-10 mx-10 flex flex-col items-center justify-center md:mx-56 md:flex-row">
-          <div className="z-10 flex min-w-fit flex-col items-center justify-center">
-            <Image
-              src="/phone.png"
-              alt="tRPC logo"
-              width={580}
-              height={580}
-              className="animate-slideInFromLeftFadeIn z-10"
-              object-fit="cover"
-            ></Image>
-          </div>
-          <div className="animate-slideInFromRightFadeIn flex h-fit max-w-fit flex-col">
+
+          <div className="animate-slideInFromLeftFadeIn flex h-fit flex-col max-w-[515px]">
             <Title />
             <div className="mt-3 w-fit">
               <h3 className="font-poppins my-4 w-fit text-2xl font-semibold text-white">
@@ -70,6 +51,17 @@ export default async function Home() {
               </div>
             </div>
           </div>
+          
+          <div className="z-10 flex min-w-fit flex-col items-center justify-center">
+            <Image
+              src="/phone.png"
+              alt="tRPC logo"
+              width={580}
+              height={580}
+              className="animate-slideInFromRightFadeIn z-10"
+              object-fit="cover"
+            ></Image>
+          </div>
         </div>
         <div className="absolute bottom-0 flex h-60 w-96 animate-pulse flex-row items-end justify-center rounded-full bg-yellow-100 blur-[425.47px]" />
         <div className="absolute bottom-2 z-10 flex flex-col items-center justify-center">
@@ -83,7 +75,8 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      <section className="flex h-screen w-full flex-col p-0">
+      <section className="flex h-screen w-full flex-col p-0 bg-gradient-to-b from-fuchsia-800 to-rose-950 ">
+      <Sparkles />
         <h1 className="font-bebas-neue mt-8 text-center text-6xl text-white md:mt-16">
           Section 2 - HOW IT WORKS
         </h1>
@@ -94,7 +87,8 @@ export default async function Home() {
           </p>
         </div>
       </section>
-      <section className="flex h-screen w-full flex-col p-0">
+      <section className="flex h-screen w-full flex-col p-0 bg-gradient-to-b from-rose-950 to-fuchsia-800">
+      <Sparkles />
         <h1 className="font-bebas-neue mt-8 text-center text-6xl text-white md:mt-16">
           Section 3 - DEMO
         </h1>
@@ -105,7 +99,8 @@ export default async function Home() {
           </p>
         </div>
       </section>
-      <section className="flex h-screen w-full flex-col p-0">
+      <section className="flex h-screen w-full flex-col p-0 bg-gradient-to-b from-fuchsia-800 to-rose-950 ">
+      <Sparkles />
         <h1 className="font-bebas-neue mt-8 text-center text-6xl text-white md:mt-16">
           Section 4 - Pricing
         </h1>
@@ -116,7 +111,8 @@ export default async function Home() {
           </p>
         </div>
       </section>
-      <section className="flex h-screen w-full flex-col items-center p-0">
+      <section className="flex h-screen w-full flex-col items-center p-0  bg-gradient-to-b from-rose-950 to-fuchsia-800">
+      <Sparkles />
         <h1 className="font-bebas-neue mt-8 text-6xl text-white md:mt-16">
           FAQ
         </h1>
