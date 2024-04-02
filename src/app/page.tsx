@@ -13,7 +13,7 @@ export default async function Home() {
 
   return (
     <>
-      <section className="z-0 flex h-screen w-full flex-col items-center justify-center p-0 bg-gradient-to-b from-rose-950 to-fuchsia-800">
+      <section className="z-0 flex h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0">
         <div className="absolute top-0 h-[550px] w-full overflow-hidden">
           <Image
             src="/AI.Chicks.svg"
@@ -25,8 +25,7 @@ export default async function Home() {
         </div>
         <Sparkles />
         <div className="z-10 mx-10 flex flex-col items-center justify-center md:mx-56 md:flex-row">
-
-          <div className="animate-slideInFromLeftFadeIn flex h-fit flex-col max-w-[515px]">
+          <div className="animate-slideInFromLeftFadeIn flex h-fit max-w-[515px] flex-col">
             <Title />
             <div className="mt-3 w-fit">
               <h3 className="font-poppins my-4 w-fit text-2xl font-semibold text-white">
@@ -51,7 +50,6 @@ export default async function Home() {
               </div>
             </div>
           </div>
-          
           <div className="z-10 flex min-w-fit flex-col items-center justify-center">
             <Image
               src="/phone.png"
@@ -75,10 +73,9 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      <section className="flex h-screen w-full flex-col p-0 bg-gradient-to-b from-fuchsia-800 to-rose-950 ">
-      <Sparkles />
-        <h1 className="font-bebas-neue mt-8 text-center text-6xl text-white md:mt-16">
-          Section 2 - HOW IT WORKS
+      <section className="flex h-screen w-full flex-col bg-gradient-to-b from-fuchsia-800 to-rose-950 p-0 ">
+        <h1 className="font-poppins mt-8 text-center text-6xl font-semibold text-white md:mt-16">
+          How It Works
         </h1>
         <div className="mt-8 flex flex-col items-center justify-center md:mt-16">
           <p className="font-poppins w-1/2 text-center text-2xl text-white opacity-60">
@@ -87,10 +84,9 @@ export default async function Home() {
           </p>
         </div>
       </section>
-      <section className="flex h-screen w-full flex-col p-0 bg-gradient-to-b from-rose-950 to-fuchsia-800">
-      <Sparkles />
-        <h1 className="font-bebas-neue mt-8 text-center text-6xl text-white md:mt-16">
-          Section 3 - DEMO
+      <section className="flex h-screen w-full flex-col bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0">
+        <h1 className="font-poppins mt-8 text-center text-6xl font-semibold text-white md:mt-16">
+          One video worth thousands words
         </h1>
         <div className="mt-8 flex flex-col items-center justify-center md:mt-16">
           <p className="font-poppins w-1/2 text-center text-2xl text-white opacity-60">
@@ -99,10 +95,9 @@ export default async function Home() {
           </p>
         </div>
       </section>
-      <section className="flex h-screen w-full flex-col p-0 bg-gradient-to-b from-fuchsia-800 to-rose-950 ">
-      <Sparkles />
-        <h1 className="font-bebas-neue mt-8 text-center text-6xl text-white md:mt-16">
-          Section 4 - Pricing
+      <section className="flex h-screen w-full flex-col bg-gradient-to-b from-fuchsia-800 to-rose-950 p-0 ">
+        <h1 className="font-poppins mt-8 text-center text-6xl font-semibold text-white md:mt-16">
+          One video worth thousands words
         </h1>
         <div className="mt-8 flex flex-col items-center justify-center md:mt-16">
           <p className="font-poppins w-1/2 text-center text-2xl text-white opacity-60">
@@ -111,10 +106,9 @@ export default async function Home() {
           </p>
         </div>
       </section>
-      <section className="flex h-screen w-full flex-col items-center p-0  bg-gradient-to-b from-rose-950 to-fuchsia-800">
-      <Sparkles />
-        <h1 className="font-bebas-neue mt-8 text-6xl text-white md:mt-16">
-          FAQ
+      <section className="flex h-screen w-full flex-col items-center bg-gradient-to-b  from-rose-950 to-fuchsia-800 p-0">
+        <h1 className="font-poppins mt-8 text-center text-6xl font-semibold text-white md:mt-16">
+          F.A.Q
         </h1>
         <div className="flex w-fit flex-col items-center justify-center gap-4 md:mt-16">
           <div className="collapse-arrow bg-base-200 collapse">
