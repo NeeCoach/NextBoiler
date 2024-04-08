@@ -1,10 +1,8 @@
 import "~/styles/globals.css";
 
 import { Inter } from "next/font/google";
-
 import { TRPCReactProvider } from "~/trpc/react";
-import { Footer } from "~/components/custom";
-import { NavBar } from "~/components/custom/navbar";
+import { Footer, NavBar } from "~/components/custom";
 
 const inter = Inter({
   subsets: ["latin"],

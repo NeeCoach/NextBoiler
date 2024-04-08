@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Logos, Sparkles, Title } from "~/components/custom";
+import { Logos, NavBar, Sparkles, Title } from "~/components/custom";
 
 import { CreatePost } from "~/components/create-post";
 import { getServerAuthSession } from "~/server/auth";
 import { api } from "~/trpc/server";
-import { SparklesCore } from "~/components/ui/sparkles";
 
 export default async function Home() {
   // const hello = await api.post.hello({ text: "from tRPC" });
@@ -13,7 +12,7 @@ export default async function Home() {
 
   return (
     <>
-      <section className="z-0 flex h-full w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0 md:h-screen">
+      <section className="top-0 z-0 flex h-full w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0 md:h-screen">
         <div className="absolute top-0 h-[550px] w-full overflow-hidden">
           <Image
             src="/AI.Chicks.svg"
