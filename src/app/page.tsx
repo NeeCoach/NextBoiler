@@ -13,7 +13,7 @@ export default async function Home() {
 
   return (
     <>
-      <section className="z-0 flex h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0">
+      <section className="z-0 flex h-full w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0 md:h-screen">
         <div className="absolute top-0 h-[550px] w-full overflow-hidden">
           <Image
             src="/AI.Chicks.svg"
@@ -25,13 +25,13 @@ export default async function Home() {
         </div>
         <Sparkles />
         <div className="z-10 mx-10 flex flex-col items-center justify-center md:mx-56 md:flex-row">
-          <div className="animate-slideInFromLeftFadeIn flex h-fit max-w-[515px] flex-col">
+          <div className="flex h-fit max-w-[515px] animate-slideInFromLeftFadeIn flex-col">
             <Title />
             <div className="mt-3 w-fit">
-              <h3 className="font-poppins my-4 w-fit text-2xl font-semibold text-white">
+              <h3 className="my-4 w-fit font-poppins text-2xl font-semibold text-white">
                 Can&apos;t beat influencers trends? Become their master!
               </h3>
-              <p className="font-poppins mb-6 text-xl font-light text-white opacity-60">
+              <p className="mb-6 font-poppins text-xl font-light text-white opacity-60">
                 Click, create, conquer – deploy your fake army of AI influencers
                 and let them seduce the net with irresistible allure.
               </p>
@@ -56,14 +56,14 @@ export default async function Home() {
               alt="tRPC logo"
               width={580}
               height={580}
-              className="animate-slideInFromRightFadeIn z-10"
+              className="z-10 animate-slideInFromRightFadeIn"
               object-fit="cover"
             ></Image>
           </div>
         </div>
         <div className="absolute bottom-0 flex h-60 w-96 animate-pulse flex-row items-end justify-center rounded-full bg-yellow-100 blur-[425.47px]" />
-        <div className="absolute bottom-2 z-10 flex flex-col items-center justify-center">
-          <div className="font-poppins leading-2 text-center text-sm font-extralight text-white">
+        <div className="relative bottom-2 z-10 flex flex-col items-center justify-center">
+          <div className="leading-2 text-center font-poppins text-sm font-extralight text-white">
             Work with
           </div>
           <div className="flex flex-row items-center justify-center gap-1">
@@ -74,44 +74,44 @@ export default async function Home() {
         </div>
       </section>
       <section className="flex h-screen w-full flex-col bg-gradient-to-b from-fuchsia-800 to-rose-950 p-0 ">
-        <h1 className="font-poppins mt-8 text-center text-6xl font-semibold text-white md:mt-16">
+        <h1 className="mt-8 text-center font-poppins text-6xl font-semibold text-white md:mt-16">
           How It Works
         </h1>
         <div className="mt-8 flex flex-col items-center justify-center md:mt-16">
-          <p className="font-poppins w-1/2 text-center text-2xl text-white opacity-60">
+          <p className="w-1/2 text-center font-poppins text-2xl text-white opacity-60">
             Most influencers you idolize craft their fame with lies, raking in
             cash by the minute. Why watch from the sidelines?
           </p>
         </div>
       </section>
       <section className="flex h-screen w-full flex-col bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0">
-        <h1 className="font-poppins mt-8 text-center text-6xl font-semibold text-white md:mt-16">
+        <h1 className="mt-8 text-center font-poppins text-6xl font-semibold text-white md:mt-16">
           One video worth thousands words
         </h1>
         <div className="mt-8 flex flex-col items-center justify-center md:mt-16">
-          <p className="font-poppins w-1/2 text-center text-2xl text-white opacity-60">
+          <p className="w-1/2 text-center font-poppins text-2xl text-white opacity-60">
             Most influencers you idolize craft their fame with lies, raking in
             cash by the minute. Why watch from the sidelines?
           </p>
         </div>
       </section>
       <section className="flex h-screen w-full flex-col bg-gradient-to-b from-fuchsia-800 to-rose-950 p-0 ">
-        <h1 className="font-poppins mt-8 text-center text-6xl font-semibold text-white md:mt-16">
+        <h1 className="mt-8 text-center font-poppins text-6xl font-semibold text-white md:mt-16">
           One video worth thousands words
         </h1>
         <div className="mt-8 flex flex-col items-center justify-center md:mt-16">
-          <p className="font-poppins w-1/2 text-center text-2xl text-white opacity-60">
+          <p className="w-1/2 text-center font-poppins text-2xl text-white opacity-60">
             Most influencers you idolize craft their fame with lies, raking in
             cash by the minute. Why watch from the sidelines?
           </p>
         </div>
       </section>
       <section className="flex h-screen w-full flex-col items-center bg-gradient-to-b  from-rose-950 to-fuchsia-800 p-0">
-        <h1 className="font-poppins mt-8 text-center text-6xl font-semibold text-white md:mt-16">
+        <h1 className="mt-8 text-center font-poppins text-6xl font-semibold text-white md:mt-16">
           F.A.Q
         </h1>
         <div className="flex w-fit flex-col items-center justify-center gap-4 md:mt-16">
-          <div className="collapse-arrow bg-base-200 collapse">
+          <div className="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" defaultChecked />
             <div className="collapse-title text-xl font-medium">
               Click to open this one and close others
@@ -120,7 +120,7 @@ export default async function Home() {
               <p>hello</p>
             </div>
           </div>
-          <div className="collapse-arrow bg-base-200 collapse">
+          <div className="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">
               Click to open this one and close others
@@ -129,7 +129,7 @@ export default async function Home() {
               <p>hello</p>
             </div>
           </div>
-          <div className="collapse-arrow bg-base-200 collapse">
+          <div className="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">
               Click to open this one and close others

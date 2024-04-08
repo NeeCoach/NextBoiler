@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 
 import { TRPCReactProvider } from "~/trpc/react";
 import { Footer } from "~/components/custom";
+import { NavBar } from "~/components/custom/navbar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,8 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`font-sans ${inter.variable} animate-bg overscroll-none`}
+        className={`font-sans ${inter.variable} animate-bg flex min-w-fit flex-col items-center justify-center overscroll-none`}
       >
+        <NavBar />
         <TRPCReactProvider>{children}</TRPCReactProvider>
         <Footer />
       </body>
