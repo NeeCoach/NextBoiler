@@ -1,9 +1,32 @@
+"use client";
+
+import { useState, useEffect } from "react";
+
 export const NavBar = () => {
+  const TOP_OFFSET = 50;
+  const [showBackground, setShowBackground] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= TOP_OFFSET) {
+        setShowBackground(true);
+      } else {
+        setShowBackground(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="navbar sticky top-0 z-50 w-1/2 border-solid border-neutral-900 bg-base-100 transition-all">
+    <div
+      className={`navbar fixed top-0 z-50 border-solid ${showBackground ? "bg-white" : "bg-[#f1e6e659]"}  transition-all md:mt-2 md:w-1/2 md:rounded-full`}
+    >
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} className="lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -67,9 +90,7 @@ export const NavBar = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
-      </div>
+      <div className="navbar-end">{/* <a className="btn">Button</a> */}</div>
     </div>
   );
 };

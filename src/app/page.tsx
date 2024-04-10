@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Logos, NavBar, Sparkles, Title } from "~/components/custom";
+import { Logos, Sparkles, Title } from "~/components/custom";
 
 import { CreatePost } from "~/components/create-post";
 import { getServerAuthSession } from "~/server/auth";
 import { api } from "~/trpc/server";
+import { Features } from "~/containers";
 
 export default async function Home() {
   // const hello = await api.post.hello({ text: "from tRPC" });
@@ -12,19 +13,20 @@ export default async function Home() {
 
   return (
     <>
-      <section className="top-0 z-0 flex h-full w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0 md:h-screen">
-        <div className="absolute top-0 h-[550px] w-full overflow-hidden">
+      <section className="top-0 z-0 flex h-full w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-900 p-0 md:h-screen">
+        <div className="xabsolute top-4 h-[550px] w-full overflow-hidden">
           <Image
             src="/AI.Chicks.svg"
             alt="banner"
-            layout="fill"
             quality={100}
             className="object-contain"
+            height={550}
+            width={1920}
           />
         </div>
         <Sparkles />
         <div className="z-10 mx-10 flex flex-col items-center justify-center md:mx-56 md:flex-row">
-          <div className="flex h-fit max-w-[515px] animate-slideInFromLeftFadeIn flex-col">
+          <div className="animate-slideInFromLeftFadeIn mt-20 flex h-fit max-w-[515px] flex-col md:mt-0">
             <Title />
             <div className="mt-3 w-fit">
               <h3 className="my-4 w-fit font-poppins text-2xl font-semibold text-white">
@@ -49,21 +51,21 @@ export default async function Home() {
               </div>
             </div>
           </div>
-          <div className="z-10 flex min-w-fit flex-col items-center justify-center">
+          <div className="z-10 flex min-w-fit flex-col items-center justify-center md:mt-20 ">
             <Image
               src="/phone.png"
               alt="tRPC logo"
               width={580}
               height={580}
-              className="z-10 animate-slideInFromRightFadeIn"
+              className="animate-slideInFromRightFadeIn z-10"
               object-fit="cover"
             ></Image>
           </div>
         </div>
         <div className="absolute bottom-0 flex h-60 w-96 animate-pulse flex-row items-end justify-center rounded-full bg-yellow-100 blur-[425.47px]" />
-        <div className="relative bottom-2 z-10 flex flex-col items-center justify-center">
+        <div className="relative z-10 flex flex-col items-center justify-center">
           <div className="leading-2 text-center font-poppins text-sm font-extralight text-white">
-            Work with
+            Compatible with
           </div>
           <div className="flex flex-row items-center justify-center gap-1">
             {logos.map((logo) => (
@@ -72,18 +74,8 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      <section className="flex h-screen w-full flex-col bg-gradient-to-b from-fuchsia-800 to-rose-950 p-0 ">
-        <h1 className="mt-8 text-center font-poppins text-6xl font-semibold text-white md:mt-16">
-          How It Works
-        </h1>
-        <div className="mt-8 flex flex-col items-center justify-center md:mt-16">
-          <p className="w-1/2 text-center font-poppins text-2xl text-white opacity-60">
-            Most influencers you idolize craft their fame with lies, raking in
-            cash by the minute. Why watch from the sidelines?
-          </p>
-        </div>
-      </section>
-      <section className="flex h-screen w-full flex-col bg-gradient-to-b from-rose-950 to-fuchsia-800 p-0">
+      <Features />
+      <section className="flex h-screen w-full flex-col bg-gradient-to-b from-rose-950 to-fuchsia-900 p-0">
         <h1 className="mt-8 text-center font-poppins text-6xl font-semibold text-white md:mt-16">
           One video worth thousands words
         </h1>
@@ -94,7 +86,7 @@ export default async function Home() {
           </p>
         </div>
       </section>
-      <section className="flex h-screen w-full flex-col bg-gradient-to-b from-fuchsia-800 to-rose-950 p-0 ">
+      <section className="flex h-screen w-full flex-col bg-gradient-to-b from-fuchsia-900 to-rose-950 p-0 ">
         <h1 className="mt-8 text-center font-poppins text-6xl font-semibold text-white md:mt-16">
           One video worth thousands words
         </h1>
@@ -105,7 +97,7 @@ export default async function Home() {
           </p>
         </div>
       </section>
-      <section className="flex h-screen w-full flex-col items-center bg-gradient-to-b  from-rose-950 to-fuchsia-800 p-0">
+      <section className="flex h-screen w-full flex-col items-center bg-gradient-to-b  from-rose-950 to-fuchsia-900 p-0">
         <h1 className="mt-8 text-center font-poppins text-6xl font-semibold text-white md:mt-16">
           F.A.Q
         </h1>
@@ -144,11 +136,11 @@ export default async function Home() {
 }
 
 const logos = [
-  { src: "/icon/insta.svg", alt: "Vercel Logo" },
+  { src: "/icon/insta.svg", alt: "insta Logo" },
   { src: "/icon/x.svg", alt: "Next.js Logo" },
   { src: "/icon/tt.svg", alt: "Prisma Logo" },
   { src: "/icon/of.svg", alt: "tRPC Logo" },
-  { src: "/icon/mym.svg", alt: "Vercel Logo" },
+  { src: "/icon/mym.svg", alt: "mym Logo" },
 ];
 
 async function CrudShowcase() {

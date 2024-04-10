@@ -2,7 +2,7 @@ import { SparklesCore } from "../ui/sparkles";
 
 export const Sparkles = () => {
   return (
-    <div className="absolute inset-0 h-screen w-full">
+    <div className="fixed inset-0 h-screen w-full">
       <SparklesCore
         id="tsparticlesfullpage"
         background="transparent"
