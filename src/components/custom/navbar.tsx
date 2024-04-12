@@ -66,25 +66,29 @@ export const NavBar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">
+        <a href="/">
           <Image
             src={`/logo/${!showBackground ? "logo" : "logo-inv"}.png`}
             alt="logo"
             width={150}
             height={150}
+            className="hidden lg:block"
           />
         </a>
       </div>
       <div className="navbar-center hidden font-poppins lg:flex">
         <ul className="menu menu-horizontal px-1 text-base">
           <li>
-            <a>Item 1</a>
+            <a>Try it</a>
           </li>
           <li>
-            <a>Item 2</a>
+            <a href="#how-it-works">How it works</a>
           </li>
           <li>
-            <a>Item 3</a>
+            <a>Pricing</a>
+          </li>
+          <li>
+            <a>FAQ</a>
           </li>
         </ul>
       </div>

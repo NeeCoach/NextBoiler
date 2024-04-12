@@ -1,3 +1,5 @@
+"use client";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCamera,
@@ -24,15 +26,16 @@ const features = [
 ];
 
 const FeatureItem = ({ feature }) => {
-  console.log(feature);
   return (
     <div className="relative mb-4 flex rounded-xl bg-white p-3 opacity-30 shadow-xl transition duration-300 hover:-translate-y-2 hover:scale-105 hover:text-[#6f2066] hover:opacity-90 dark:bg-slate-800 md:p-6 lg:mb-6 xl:p-12">
       <div className="mb-6 mr-6 rounded-full text-[42px] text-red-600 xl:mr-12">
         <FontAwesomeIcon icon={feature.icon} color="white" />
       </div>
       <div>
-        <h4 className="mb-4 text-2xl font-medium">{feature.title}</h4>
-        <p>{feature.desc}</p>
+        <h4 className="mb-4 font-bebas-neue text-2xl font-medium">
+          {feature.title}
+        </h4>
+        <p className="opacity-60">{feature.desc}</p>
       </div>
     </div>
   );
@@ -40,7 +43,10 @@ const FeatureItem = ({ feature }) => {
 
 export const Features = () => {
   return (
-    <section className="flex min-h-fit w-full flex-col bg-gradient-to-b from-fuchsia-900 to-rose-950 py-14 font-poppins text-white md:py-24">
+    <section
+      id="how-it-works"
+      className="flex min-h-fit w-full flex-col bg-gradient-to-b from-fuchsia-900 to-rose-950 py-14 font-poppins text-white md:py-24"
+    >
       <div className="container mx-auto px-4">
         <div className="mx-auto mb-12 flex max-w-3xl justify-center text-center">
           <div>
