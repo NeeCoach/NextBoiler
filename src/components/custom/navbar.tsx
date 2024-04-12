@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export const NavBar = () => {
   const TOP_OFFSET = 50;
@@ -22,9 +23,9 @@ export const NavBar = () => {
 
   return (
     <div
-      className={`navbar fixed top-0 z-50 border-solid ${showBackground ? "bg-white" : "bg-[#f1e6e659]"}  transition-all md:mt-2 md:w-1/2 md:rounded-full`}
+      className={`navbar fixed top-0 z-50 border-solid font-poppins text-xl ${showBackground ? "bg-white text-[#940B72]" : "bg-transparent text-white"}  max-h-[10px] w-full text-white`}
     >
-      <div className="navbar-start">
+      <div className="navbar-start font-poppins">
         <div className="dropdown">
           <div tabIndex={0} className="lg:hidden">
             <svg
@@ -65,32 +66,31 @@ export const NavBar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">
+          <Image
+            src={`/logo/${!showBackground ? "logo" : "logo-inv"}.png`}
+            alt="logo"
+            width={150}
+            height={150}
+          />
+        </a>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+      <div className="navbar-center hidden font-poppins lg:flex">
+        <ul className="menu menu-horizontal px-1 text-base">
           <li>
             <a>Item 1</a>
           </li>
           <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
+            <a>Item 2</a>
           </li>
           <li>
             <a>Item 3</a>
           </li>
         </ul>
       </div>
-      <div className="navbar-end">{/* <a className="btn">Button</a> */}</div>
+      <div className="navbar-end font-poppins">
+        <a className="mr-4 text-base">Sign In</a>
+      </div>
     </div>
   );
 };

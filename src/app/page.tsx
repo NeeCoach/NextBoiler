@@ -14,7 +14,7 @@ export default async function Home() {
   return (
     <>
       <section className="top-0 z-0 flex h-full w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-900 p-0 md:h-screen">
-        <div className="absolute top-10 h-[550px] w-full overflow-hidden">
+        <div className="absolute top-14 h-[550px] w-full overflow-hidden">
           <Image
             src="/AI.Chicks.svg"
             alt="banner"
