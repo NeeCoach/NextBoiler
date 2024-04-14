@@ -23,7 +23,7 @@ export const NavBar = () => {
 
   return (
     <div
-      className={`navbar fixed top-0 z-50 border-solid font-poppins text-xl ${showBackground ? "bg-white text-[#940B72]" : "bg-transparent text-white"}  max-h-[10px] w-full text-white`}
+      className={`navbar fixed top-0 z-50 border-solid px-8 font-poppins text-xl lg:px-12 ${showBackground ? "bg-white text-[#940B72]" : "bg-transparent text-white"}  max-h-[10px] w-full text-white`}
     >
       <div className="navbar-start font-poppins">
         <div className="dropdown">
@@ -93,7 +93,7 @@ export const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end font-poppins">
-        <a className="mr-4 text-base">Sign In</a>
+        <a className="text-base">Sign In</a>
       </div>
     </div>
   );
