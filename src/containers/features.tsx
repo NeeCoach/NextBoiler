@@ -28,11 +28,11 @@ const features = [
 
 const FeatureItem = ({ icon, title, desc, isActive, onMouseEnter }) => (
   <div
-    className={`relative mb-4 flex rounded-xl ${isActive ? "bg-white" : "bg-transparent"} p-3 opacity-30 shadow-xl transition duration-300 hover:bg-white hover:text-[#6f2066] hover:opacity-90 dark:bg-slate-800 md:p-6 lg:mb-6 xl:p-12`}
+    className={`relative mb-4 flex rounded-xl ${isActive ? "opacity-100" : "opacity-30"} bg-white p-3 shadow-xl transition duration-100 md:p-6 lg:mb-6 xl:p-12`}
     onMouseEnter={onMouseEnter}
   >
-    <div className="mb-6 mr-6 rounded-full text-[42px] text-red-600 xl:mr-12">
-      <FontAwesomeIcon icon={icon} color="white" />
+    <div className="flex mb-6 mr-6 rounded-full text-[42px] xl:mr-12 justify-center items-center">
+      <FontAwesomeIcon icon={icon} color="text-[#930a71]" />
     </div>
     <div>
       <h4 className="mb-4 font-bebas-neue text-2xl font-medium">{title}</h4>
@@ -46,7 +46,7 @@ export const Features = () => {
   const backgroundImageUrls = [
     "https://cdn.easyfrontend.com/pictures/sign-in-up/sign-in-up-4.png",
     "https://templebarbcn.com/wp-content/uploads/2022/08/20-TempleMyBar_by_WitekPhotography_RECORTADA.jpg",
-    "https://templebarbcn.com/wp-content/uploads/2022/08/20-TempleMyBar_by_WitekPhotography_RECORTADA.jpg",
+    "https://www.1001cocktails.com/wp-content/uploads/1001cocktails/2023/03/137002_origin-768x512.jpg",
   ];
 
   return (
@@ -67,7 +67,7 @@ export const Features = () => {
           </div>
         </div>
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 md:pt-12">
-          <div className="order-2 col-span-2 text-black lg:order-1 lg:col-span-1">
+          <div className="order-2 col-span-2 text-[#6f2066] lg:order-1 lg:col-span-1">
             <div className="lg:mr-6 xl:mr-12">
               {features.map((feature, i) => (
                 <FeatureItem
@@ -81,7 +81,7 @@ export const Features = () => {
           </div>
           <div className="order-1 col-span-2 lg:order-2 lg:col-span-1">
             <div className="relative z-10 h-full">
-              <div className="absolute -right-12 -top-11 bottom-12 left-11 -z-10 rounded-[200px] bg-white opacity-50 dark:bg-slate-700 lg:rounded-full lg:rounded-tr-none" />
+              <div className="absolute -right-12 -top-11 bottom-12 left-11 -z-10 rounded-[200px] bg-white opacity-50lg:rounded-full lg:rounded-tr-none" />
               <div
                 className="float-right h-full min-h-[350px] w-full rounded-2xl bg-cover bg-center bg-no-repeat shadow-xl"
                 style={{
