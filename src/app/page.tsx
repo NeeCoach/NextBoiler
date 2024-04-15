@@ -5,8 +5,9 @@ import { Logos, Sparkles, Title } from "~/components/custom";
 import { CreatePost } from "~/components/create-post";
 import { getServerAuthSession } from "~/server/auth";
 import { api } from "~/trpc/server";
-import { Features } from "~/containers";
+import { Features, VideoPlayer } from "~/containers";
 import { Pricing } from "~/containers/pricing";
+import { Video } from "lucide-react";
 
 export default async function Home() {
   // const hello = await api.post.hello({ text: "from tRPC" });
@@ -76,17 +77,7 @@ export default async function Home() {
         </div>
       </section>
       <Features />
-      <section className="flex h-screen w-full flex-col bg-gradient-to-b from-rose-950 to-fuchsia-900 p-0">
-        <h1 className="mt-8 text-center font-poppins text-6xl font-semibold text-white md:mt-16">
-          One video worth thousands words
-        </h1>
-        <div className="mt-8 flex flex-col items-center justify-center md:mt-16">
-          <p className="w-1/2 text-center font-poppins text-2xl text-white opacity-60">
-            Most influencers you idolize craft their fame with lies, raking in
-            cash by the minute. Why watch from the sidelines?
-          </p>
-        </div>
-      </section>
+      <VideoPlayer />
       <Pricing />
       <section className="flex h-screen w-full flex-col items-center bg-gradient-to-b  from-rose-950 to-fuchsia-900 p-0">
         <h1 className="mt-8 text-center font-poppins text-6xl font-semibold text-white md:mt-16">

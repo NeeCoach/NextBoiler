@@ -21,6 +21,7 @@ const config = {
       fontFamily: {
         "bebas-neue": ["Bebas Neue", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
