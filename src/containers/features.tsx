@@ -68,10 +68,10 @@ export const Features = () => {
       return ScrollTrigger.create({
         trigger: panel,
         start: "top center",
-        end: "bottom center",
+        end: "center bottom",
         onEnter: () => setActiveIndex(i),
         onLeaveBack: () => setActiveIndex(i),
-        snap: true, // Ou une valeur spécifique si nécessaire
+        snap: true,
       });
     });
 
