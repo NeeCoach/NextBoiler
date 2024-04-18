@@ -23,7 +23,8 @@ export const Pricing = () => (
           Managing a small business today is already tough.
         </p>
         <div className="h-min-fit grid w-full grid-cols-1 gap-8 pt-20 text-left lg:grid-cols-3">
-          <Card className="w-full rounded-md">
+          {/* make smooth animation on hover */}
+          <Card className="w-full rounded-md flex flex-col hover:scale-105 hover:shadow-2xl ease-linear duration-100">
             <CardHeader>
               <CardTitle>
                 <span className="flex flex-row items-center gap-4 font-normal">

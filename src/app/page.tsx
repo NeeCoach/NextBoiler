@@ -26,7 +26,7 @@ export default async function Home() {
             width={1920}
           />
         </div>
-        {/* <Sparkles /> */}
+        {/* <Sparkles /> */}          
         <div className="z-10 mx-10 flex flex-col items-center justify-center md:mx-56 md:flex-row">
           <div className="animate-slideInFromLeftFadeIn mt-20 flex h-fit max-w-[515px] flex-col md:mt-0">
             <Title />
