@@ -24,14 +24,14 @@ const config = {
         inter: ["Inter", "sans-serif"],
       },
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
+        border: "#701a75",
+        input: "#701a75",
+        ring: "hsl(0, 0%, 100%)",
         background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        foreground: "hsl(0, 0%, 95%)",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#701a75",
+          foreground: "hsl(0, 0%, 100%)",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -80,12 +80,17 @@ const config = {
           from: { transform: "translateX(-300px)", opacity: "0" },
           to: { transform: "translateX(0)", opacity: "1" },
         },
+        underlineAnimation: {
+          "0%": { width: "0" },
+          "100%": { width: "100%" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         slideInFromRightFadeIn: "slideInFromRightFadeIn 1s ease-out",
         slideInFromLeftFadeIn: "slideInFromLeftFadeIn 0.6s ease-out",
+        underline: "underlineAnimation 1.5s ease-in-out forwards",
       },
     },
   },

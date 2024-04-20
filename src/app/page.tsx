@@ -5,8 +5,8 @@ import { Logos, Sparkles, Title } from "~/components/custom";
 import { CreatePost } from "~/components/create-post";
 import { getServerAuthSession } from "~/server/auth";
 import { api } from "~/trpc/server";
-import { Features, VideoPlayer } from "~/containers";
-import { Pricing } from "~/containers/pricing";
+import { FAQ, Features, VideoPlayer } from "~/containers";
+import { Pricing } from "~/containers/Pricing";
 import { Video } from "lucide-react";
 
 export default async function Home() {
@@ -26,9 +26,9 @@ export default async function Home() {
             width={1920}
           />
         </div>
-        {/* <Sparkles /> */}          
-        <div className="z-10 mx-10 flex flex-col items-center justify-center md:mx-56 md:flex-row">
-          <div className="animate-slideInFromLeftFadeIn mt-20 flex h-fit max-w-[515px] flex-col md:mt-0">
+        {/* <Sparkles /> */}
+        <div className="z-10 mx-10 flex flex-col items-center justify-center md:mx-40 md:flex-row md:gap-16">
+          <div className="mt-20 flex h-fit max-w-[515px] animate-slideInFromLeftFadeIn flex-col md:mt-0">
             <Title />
             <div className="mt-3 w-fit">
               <h3 className="my-4 w-fit font-poppins text-2xl font-semibold text-white">
@@ -59,7 +59,7 @@ export default async function Home() {
               alt="tRPC logo"
               width={580}
               height={580}
-              className="animate-slideInFromRightFadeIn z-10"
+              className="z-10 animate-slideInFromRightFadeIn"
               object-fit="cover"
             ></Image>
           </div>
@@ -80,38 +80,7 @@ export default async function Home() {
       <VideoPlayer />
       <Pricing />
       <section className="flex h-screen w-full flex-col items-center bg-gradient-to-b  from-rose-950 to-fuchsia-900 p-0">
-        <h1 className="mt-8 text-center font-poppins text-6xl font-semibold text-white md:mt-16">
-          F.A.Q
-        </h1>
-        <div className="flex w-fit flex-col items-center justify-center gap-4 md:mt-16">
-          <div className="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" defaultChecked />
-            <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
-            </div>
-            <div className="collapse-content">
-              <p>hello</p>
-            </div>
-          </div>
-          <div className="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
-            </div>
-            <div className="collapse-content">
-              <p>hello</p>
-            </div>
-          </div>
-          <div className="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
-            </div>
-            <div className="collapse-content">
-              <p>hello</p>
-            </div>
-          </div>
-        </div>
+        <FAQ />
       </section>
     </>
   );

@@ -23,7 +23,7 @@ export const NavBar = () => {
 
   return (
     <div
-      className={`navbar fixed top-0 z-50 border-solid px-8 font-poppins text-xl lg:px-12 ${showBackground ? "bg-white" : "bg-transparent"}  ${showBackground ? "text-[#940B72]" : "text-white"} max-h-[10px] w-full `}
+      className={`navbar fixed top-0 z-50 border-solid px-8 font-poppins text-xl lg:px-12 ${showBackground ? "bg-white" : "bg-transparent"} ${showBackground ? "text-[#940B72]" : "text-white"} max-h-[10px] w-full`}
     >
       <div className="navbar-start font-poppins">
         <div className="dropdown">
@@ -45,7 +45,7 @@ export const NavBar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
+            className="menu dropdown-content menu-sm z-[1] mt-3 w-52 bg-base-100 p-2 shadow"
           >
             <li>
               <a>Item 1</a>
@@ -79,21 +79,50 @@ export const NavBar = () => {
       <div className="navbar-center hidden font-poppins lg:flex">
         <ul className="menu menu-horizontal px-1 text-base">
           <li>
-            <a>Try it</a>
+            <a className="rounded-none hover:bg-transparent">
+              <span
+                className={`${showBackground ? "underline-animation-fuschia" : "underline-animation"}`}
+              >
+                Try it
+              </span>
+            </a>
           </li>
           <li>
-            <a href="#how-it-works">How it works</a>
+            <a
+              href="#how-it-works"
+              className="rounded-none hover:bg-transparent"
+            >
+              <span
+                className={`${showBackground ? "underline-animation-fuschia" : "underline-animation"}`}
+              >
+                How it works
+              </span>
+            </a>
           </li>
           <li>
-            <a>Pricing</a>
+            <a href="#pricing" className="rounded-none hover:bg-transparent">
+              <span
+                className={`${showBackground ? "underline-animation-fuschia" : "underline-animation"}`}
+              >
+                Pricing
+              </span>
+            </a>
           </li>
           <li>
-            <a>FAQ</a>
+            <a href="#faq" className="rounded-none hover:bg-transparent">
+              <span
+                className={`${showBackground ? "underline-animation-fuschia" : "underline-animation"}`}
+              >
+                FAQ
+              </span>
+            </a>
           </li>
         </ul>
       </div>
       <div className="navbar-end font-poppins">
-        <a className="text-base">Sign In</a>
+        <a href="/login" className="underline-animation text-base">
+          Sign In
+        </a>
       </div>
     </div>
   );

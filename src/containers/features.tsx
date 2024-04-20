@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   type IconDefinition,
@@ -8,11 +8,6 @@ import {
   faVideo,
   faCoins,
 } from "@fortawesome/free-solid-svg-icons";
-
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 interface Feature {
   icon: IconDefinition;
@@ -48,7 +43,7 @@ const FeatureItem = ({
   onMouseEnter,
 }: Feature) => (
   <div
-    className={`feature relative mb-4 flex rounded-xl ${isActive ? "opacity-100" : "opacity-30"} bg-white p-3 shadow-xl transition duration-100 md:p-6 lg:mb-6 xl:p-12`}
+    className={`feature relative z-10 mb-4 flex rounded-md ${isActive ? "opacity-100" : "opacity-30"} bg-white p-3 shadow-xl transition duration-100 md:p-6 lg:mb-6 xl:p-12`}
     onMouseEnter={onMouseEnter}
   >
     <div className="mb-6 mr-6 flex items-center justify-center rounded-full text-[42px] xl:mr-12">
@@ -56,29 +51,13 @@ const FeatureItem = ({
     </div>
     <div>
       <h4 className="mb-4 font-poppins text-2xl font-medium">{title}</h4>
-      <p className="font-inter text-pretty opacity-60">{desc}</p>
+      <p className="text-pretty font-inter opacity-60">{desc}</p>
     </div>
   </div>
 );
 
 export const Features = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
-  useEffect(() => {
-    const triggers = gsap.utils.toArray(".feature").map((panel, i) => {
-      return ScrollTrigger.create({
-        trigger: panel,
-        start: "top center",
-        end: "center bottom",
-        onEnter: () => setActiveIndex(i),
-        onLeaveBack: () => setActiveIndex(i),
-        snap: true,
-      });
-    });
-
-    return () => {
-      triggers.forEach((trigger) => trigger.kill());
-    };
-  }, []); // Ajouter des dépendances si nécessaire
 
   const backgroundImageUrls = [
     "https://cdn.easyfrontend.com/pictures/sign-in-up/sign-in-up-4.png",
@@ -89,15 +68,15 @@ export const Features = () => {
   return (
     <section
       id="how-it-works"
-      className="flex min-h-fit w-full flex-col bg-gradient-to-b from-fuchsia-900 to-rose-950 py-14 font-poppins text-white md:py-24"
+      className="flex min-h-fit w-full flex-col bg-gradient-to-b from-fuchsia-900 to-rose-950 py-14 text-white md:py-24"
     >
       <div className="container mx-auto mt-8 px-28">
         <div className="mx-auto mb-12 flex max-w-3xl justify-center text-center">
           <div>
-            <h2 className="mb-6 text-2xl font-bold leading-none md:text-[45px]">
+            <h2 className="text-stroke stroke-white p-6 font-bebas-neue text-7xl leading-none text-transparent md:text-nowrap">
               How It Works
             </h2>
-            <p className="mb-6 text-lg">
+            <p className="font-regular mb-6 text-lg opacity-80">
               Under saying our appear Second their heaven created shall darkness
               him great kind open creature Deep open had i above.
             </p>
@@ -116,7 +95,7 @@ export const Features = () => {
               ))}
             </div>
           </div>
-          <div className="order-1 col-span-2 lg:order-2 lg:col-span-1">
+          <div className="z-10 order-1 col-span-2 lg:order-2 lg:col-span-1">
             <div className="relative z-10 h-full">
               <div className="absolute -right-12 -top-11 bottom-12 left-11 -z-10 rounded-[200px] bg-white opacity-50 lg:rounded-full lg:rounded-tr-none" />
               <div

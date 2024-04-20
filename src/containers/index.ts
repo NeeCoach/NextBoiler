@@ -1,4 +1,5 @@
-import { Features } from "./features";
-import { VideoPlayer } from "./video";
+import { Features } from "./Features";
+import { VideoPlayer } from "./Video";
+import { FAQ } from "./Faq";
 
-export { Features, VideoPlayer };
+export { Features, VideoPlayer, FAQ };
