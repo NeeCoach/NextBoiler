@@ -70,40 +70,209 @@ export const Features = () => {
       id="how-it-works"
       className="flex min-h-fit w-full flex-col bg-gradient-to-b from-fuchsia-900 to-rose-950 py-14 text-white md:py-24"
     >
-      <div className="container mx-auto mt-8 px-28">
-        <div className="mx-auto mb-12 flex max-w-3xl justify-center text-center">
-          <div>
-            <h2 className="text-stroke stroke-white p-6 font-bebas-neue text-7xl leading-none text-transparent md:text-nowrap">
-              How It Works
-            </h2>
-            <p className="font-regular mb-6 text-lg opacity-80">
-              Under saying our appear Second their heaven created shall darkness
-              him great kind open creature Deep open had i above.
-            </p>
-          </div>
+      <div className="mx-auto mb-12 flex max-w-3xl justify-center text-center">
+        <div>
+          <h2 className="text-stroke stroke-white p-6 font-bebas-neue text-7xl leading-none text-transparent md:text-nowrap">
+            How It Works
+          </h2>
+          <p className="font-regular mb-6 text-lg opacity-80">
+            Under saying our appear Second their heaven created shall darkness
+            him great kind open creature Deep open had i above.
+          </p>
         </div>
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 md:pt-12">
-          <div className="order-2 col-span-2 text-[#6f2066] lg:order-1 lg:col-span-1">
-            <div className="lg:mr-6 xl:mr-12">
-              {features.map((feature, i) => (
-                <FeatureItem
-                  {...feature}
-                  key={i}
-                  isActive={i === activeIndex}
-                  onMouseEnter={() => setActiveIndex(i)}
-                />
-              ))}
-            </div>
-          </div>
-          <div className="z-10 order-1 col-span-2 lg:order-2 lg:col-span-1">
-            <div className="relative z-10 h-full">
-              <div className="absolute -right-12 -top-11 bottom-12 left-11 -z-10 rounded-[200px] bg-white opacity-50 lg:rounded-full lg:rounded-tr-none" />
-              <div
-                className="float-right h-full min-h-[350px] w-full rounded-2xl bg-cover bg-center bg-no-repeat shadow-xl"
-                style={{
-                  backgroundImage: `url(${backgroundImageUrls[activeIndex]})`,
-                }}
-              ></div>
+      </div>
+      <div className="py-12 md:px-6">
+        <div className="container mx-auto xl:px-32">
+          <div className="grid items-center lg:grid-cols-2">
+            <div className="mb-12 md:mt-12 lg:mb-0 lg:mt-0">
+              <div className="relative z-[1] block rounded-lg border border-white bg-[#ead9e624] px-6 py-12 backdrop-blur-[25px] md:px-12 lg:-mr-14">
+                <h2 className="mb-6 text-3xl font-bold">Why is it so great?</h2>
+                <p className="mb-8 text-[#eee2e999] ">
+                  Nunc tincidunt vulputate elit. Mauris varius purus malesuada
+                  neque iaculis malesuada. Aenean gravida magna orci, non
+                  efficitur est porta id. Donec magna diam.
+                </p>
+
+                <div className="grid gap-x-6 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
+                  <div className="mb-6">
+                    <p className="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        className="mr-3 h-5 w-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M4.5 12.75l6 6 9-13.5"
+                        />
+                      </svg>
+                      Support 24/7
+                    </p>
+                  </div>
+
+                  <div className="mb-6">
+                    <p className="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        className="mr-3 h-5 w-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M4.5 12.75l6 6 9-13.5"
+                        />
+                      </svg>
+                      Analytics
+                    </p>
+                  </div>
+
+                  <div className="mb-6">
+                    <p className="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        className="mr-3 h-5 w-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M4.5 12.75l6 6 9-13.5"
+                        />
+                      </svg>
+                      Components
+                    </p>
+                  </div>
+                  <div className="mb-6">
+                    <p className="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        className="mr-3 h-5 w-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M4.5 12.75l6 6 9-13.5"
+                        />
+                      </svg>
+                      Updates
+                    </p>
+                  </div>
+
+                  <div className="mb-6">
+                    <p className="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        className="mr-3 h-5 w-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M4.5 12.75l6 6 9-13.5"
+                        />
+                      </svg>
+                      Reports
+                    </p>
+                  </div>
+
+                  <div className="mb-6">
+                    <p className="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        className="mr-3 h-5 w-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M4.5 12.75l6 6 9-13.5"
+                        />
+                      </svg>
+                      Mobile
+                    </p>
+                  </div>
+                  <div className="mb-6">
+                    <p className="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        className="mr-3 h-5 w-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M4.5 12.75l6 6 9-13.5"
+                        />
+                      </svg>
+                      Modules
+                    </p>
+                  </div>
+
+                  <div className="mb-6">
+                    <p className="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        className="mr-3 h-5 w-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M4.5 12.75l6 6 9-13.5"
+                        />
+                      </svg>
+                      Blocks
+                    </p>
+                  </div>
+
+                  <div className="mb-6">
+                    <p className="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        className="mr-3 h-5 w-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M4.5 12.75l6 6 9-13.5"
+                        />
+                      </svg>
+                      Templates
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -111,3 +280,42 @@ export const Features = () => {
     </section>
   );
 };
+
+// <div className="container mx-auto mt-8 px-28">
+//   <div className="mx-auto mb-12 flex max-w-3xl justify-center text-center">
+//     <div>
+//       <h2 className="text-stroke stroke-white p-6 font-bebas-neue text-7xl leading-none text-transparent md:text-nowrap">
+//         How It Works
+//       </h2>
+//       <p className="font-regular mb-6 text-lg opacity-80">
+//         Under saying our appear Second their heaven created shall darkness
+//         him great kind open creature Deep open had i above.
+//       </p>
+//     </div>
+//   </div>
+//   <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 md:pt-12">
+//     <div className="order-2 col-span-2 text-[#6f2066] lg:order-1 lg:col-span-1">
+//       <div className="lg:mr-6 xl:mr-12">
+//         {features.map((feature, i) => (
+//           <FeatureItem
+//             {...feature}
+//             key={i}
+//             isActive={i === activeIndex}
+//             onMouseEnter={() => setActiveIndex(i)}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//     <div className="z-10 order-1 col-span-2 lg:order-2 lg:col-span-1">
+//       <div className="relative z-10 h-full">
+//         <div className="absolute -right-12 -top-11 bottom-12 left-11 -z-10 rounded-[200px] bg-white opacity-50 lg:rounded-full lg:rounded-tr-none" />
+//         <div
+//           className="float-right h-full min-h-[350px] w-full rounded-2xl bg-cover bg-center bg-no-repeat shadow-xl"
+//           style={{
+//             backgroundImage: `url(${backgroundImageUrls[activeIndex]})`,
+//           }}
+//         ></div>
+//       </div>
+//     </div>
+//   </div>
+// </div>
