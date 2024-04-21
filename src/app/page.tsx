@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Logos, Sparkles, Title } from "~/components/custom";
-
 import { CreatePost } from "~/components/create-post";
 import { getServerAuthSession } from "~/server/auth";
 import { api } from "~/trpc/server";
 import { FAQ, Features, VideoPlayer } from "~/containers";
 import { Pricing } from "~/containers/Pricing";
 import { Video } from "lucide-react";
+import AvatarGroup from "~/components/custom/AvatarGroup";
 
 export default async function Home() {
   // const hello = await api.post.hello({ text: "from tRPC" });
@@ -27,19 +27,19 @@ export default async function Home() {
           />
         </div>
         <Sparkles />
-        <div className="z-10 mx-10 flex flex-col items-center justify-center md:mx-40 md:flex-row md:gap-16">
+        <div className="z-10 mx-10 flex flex-col items-center justify-center md:mx-40 md:flex-row md:gap-8">
           <div className="mt-20 flex h-fit max-w-[515px] animate-slideInFromLeftFadeIn flex-col md:mt-0">
             <Title />
             <div className="mt-3 w-fit">
               <h3 className="my-4 w-fit font-poppins text-2xl font-semibold text-white">
-                Can&apos;t beat influencers trends? Become their master!
+                Create your AI agency and become their master!
               </h3>
               <p className="mb-6 font-poppins text-xl font-light text-white opacity-60">
                 Click, create, conquer – deploy your fake army of AI influencers
-                and let them seduce the net with irresistible allure.
+                and let them seduce the worldr with irresistible allure.
               </p>
               <div className="flex flex-row">
-                <button className="flew-row flex items-center justify-center gap-2 rounded-md border-2 border-solid border-white bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-1 px-4 shadow-md">
+                <button className="flew-row flex items-center justify-center gap-2 rounded-md border-2 border-solid border-white bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-1 px-8 shadow-md">
                   <Image
                     src="/icon/MagicWand.svg"
                     width={24}
@@ -50,6 +50,9 @@ export default async function Home() {
                     Fake it
                   </span>
                 </button>
+              </div>
+              <div className="py-8">
+                <AvatarGroup />
               </div>
             </div>
           </div>

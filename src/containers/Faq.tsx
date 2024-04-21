@@ -37,7 +37,7 @@ export const FAQ = () => (
             <div className="">
               <Button
                 variant="outline"
-                className="gap-4 border border-secondary bg-[#ead9e624] text-secondary"
+                className="gap-4 border border-secondary bg-[#ead9e624] text-secondary hover:text-primary"
               >
                 Sign up today <PhoneCall className="h-4 w-4" />
               </Button>

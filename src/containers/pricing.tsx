@@ -27,7 +27,7 @@ export const Pricing = () => (
         </div>
       </div>
       <div className="h-min-fit flex w-full flex-col items-center justify-center gap-16 pt-14 text-left md:flex-row">
-        <Card className="flex w-96 flex-col rounded-md border border-white bg-[#ead9e624] backdrop-blur-[25px] duration-100 ease-linear hover:scale-105 hover:shadow-2xl ">
+        <Card className="flex w-96 flex-col rounded-md border border-white bg-[#ead9e624] backdrop-blur-[25px] duration-100 ease-linear hover:scale-105 hover:cursor-pointer hover:shadow-2xl ">
           <CardHeader>
             <CardTitle>
               <span className="flex flex-row items-center gap-4 font-normal text-secondary">
@@ -43,7 +43,7 @@ export const Pricing = () => (
             <div className="flex flex-col justify-start gap-8">
               <p className="flex flex-row  items-center gap-2 text-xl">
                 <span className="text-4xl text-secondary">$40</span>
-                <span className="text-sm text-[#eee2e999]"> / month</span>
+                <span className="text-base text-[#eee2e999]"> / month</span>
               </p>
               <div className="flex flex-col justify-start gap-4">
                 <div className="flex flex-row gap-4">
@@ -94,14 +94,14 @@ export const Pricing = () => (
               </div>
               <Button
                 variant="outline"
-                className="gap-4 border border-secondary bg-[#ead9e624] text-secondary"
+                className="gap-4 border border-secondary bg-[#ead9e624] text-base text-secondary hover:text-primary"
               >
                 Sign up today <MoveRight className="h-4 w-4" />
               </Button>
             </div>
           </CardContent>
         </Card>
-        <Card className="flex w-96 flex-col rounded-md border border-white bg-[#ead9e624] backdrop-blur-[25px] duration-100 ease-linear hover:scale-105 hover:shadow-2xl ">
+        <Card className="flex w-96 flex-col rounded-md border border-white bg-[#ead9e624] backdrop-blur-[25px] duration-100 ease-linear hover:scale-105 hover:cursor-pointer hover:shadow-2xl ">
           <CardHeader>
             <CardTitle>
               <span className="flex flex-row items-center gap-4 font-normal text-secondary">
@@ -117,7 +117,7 @@ export const Pricing = () => (
             <div className="flex flex-col justify-start gap-8">
               <p className="flex flex-row  items-center gap-2 text-xl">
                 <span className="text-4xl text-secondary">$40</span>
-                <span className="text-sm text-[#eee2e999]"> / month</span>
+                <span className="text-base text-[#eee2e999]"> / month</span>
               </p>
               <div className="flex flex-col justify-start gap-4">
                 <div className="flex flex-row gap-4">
@@ -168,7 +168,7 @@ export const Pricing = () => (
               </div>
               <Button
                 variant="outline"
-                className="gap-4 border border-secondary bg-secondary text-primary hover:bg-primary hover:text-secondary"
+                className="gap-4 border border-secondary bg-[#ead9e624] text-base text-secondary hover:text-primary"
               >
                 Sign up today <MoveRight className="h-4 w-4" />
               </Button>

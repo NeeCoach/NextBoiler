@@ -76,7 +76,7 @@ export const Features = () => {
           <h2 className="text-stroke stroke-white p-6 font-bebas-neue text-7xl leading-none text-transparent md:text-nowrap">
             How It Works
           </h2>
-          <p className="font-regular mb-6 text-lg opacity-80">
+          <p className="font-base mb-6 text-lg opacity-80">
             Under saying our appear Second their heaven created shall darkness
             him great kind open creature Deep open had i above.
           </p>
@@ -88,7 +88,7 @@ export const Features = () => {
             <div className="mb-12 md:mt-12 lg:mb-0 lg:mt-0">
               <div className="relative z-[1] block rounded-lg border border-white bg-[#ead9e624] px-6 py-12 backdrop-blur-[25px] md:px-12 lg:-mr-14">
                 <h2 className="mb-6 text-3xl font-bold">Why is it so great?</h2>
-                <p className="mb-8 text-[#eee2e999] ">
+                <p className="mb-8 text-[#eee2e999]">
                   Nunc tincidunt vulputate elit. Mauris varius purus malesuada
                   neque iaculis malesuada. Aenean gravida magna orci, non
                   efficitur est porta id. Donec magna diam.
@@ -275,7 +275,7 @@ export const Features = () => {
                 </div>
               </div>
             </div>
-            <div className="z-50 md:mb-12 lg:mb-0">
+            <div className="z-20 md:mb-12 lg:mb-0">
               <Image src="/phone.png" width={800} height={800} alt="" />
             </div>
           </div>

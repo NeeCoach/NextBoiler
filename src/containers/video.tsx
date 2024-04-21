@@ -10,7 +10,7 @@ export const VideoPlayer = () => {
             <h2 className="text-stroke stroke-white p-6 font-bebas-neue text-7xl leading-none text-transparent md:text-nowrap">
               One video worth a thousand words
             </h2>
-            <p className="mb-6 font-inter text-lg opacity-80">
+            <p className="mb-6 text-base opacity-80">
               Under saying our appear Second their heaven created shall darkness
               him great kind open creature Deep open had i above.
             </p>
@@ -18,7 +18,6 @@ export const VideoPlayer = () => {
         </div>
       </div>
       <div className="mt-8 flex flex-col items-center justify-center md:mt-16">
-        {/* Video player */}
         <div className="w-4/5">
           <video
             className="w-full rounded-xl shadow-2xl"

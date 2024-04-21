@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { Button } from "../ui/button";
 
 export const NavBar = () => {
   const TOP_OFFSET = 50;
@@ -120,9 +121,12 @@ export const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end font-poppins">
-        <a href="/login" className="underline-animation text-base">
-          Sign In
-        </a>
+        <Button
+          variant="outline"
+          className={`gap-4 border hover:text-primary ${showBackground ? "border-primary" : "border-secondary"} bg-[#ead9e624] ${showBackground ? "text-primary" : "text-secondary"}`}
+        >
+          <a href="/login">Sign In</a>
+        </Button>
       </div>
     </div>
   );
