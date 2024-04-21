@@ -6,7 +6,7 @@ import { getServerAuthSession } from "~/server/auth";
 import { api } from "~/trpc/server";
 import { FAQ, Features, VideoPlayer } from "~/containers";
 import { Pricing } from "~/containers/Pricing";
-import { Video } from "lucide-react";
+import { PhoneCall, Video } from "lucide-react";
 import AvatarGroup from "~/components/custom/AvatarGroup";
 import { Button } from "~/components/ui/button";
 
@@ -39,7 +39,7 @@ export default async function Home() {
                 Click, create, conquer – deploy your fake army of AI influencers
                 and let them seduce the worldr with irresistible allure.
               </p>
-              <div className="flex flex-row">
+              <div className="flex flex-row gap-4">
                 <Button className="flew-row flex items-center justify-center gap-2 rounded-md border-2 border-solid border-white bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-1 px-8 shadow-md">
                   <span className="block rounded-md py-1 font-semibold text-white">
                     Fake it
@@ -51,6 +51,9 @@ export default async function Home() {
                     alt="Magic Wand"
                   ></Image>
                 </Button>
+                <span className="my-auto text-center text-base font-semibold text-secondary underline">
+                  Not convinced yet?
+                </span>
               </div>
               <div className="py-8">
                 <AvatarGroup />
