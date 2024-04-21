@@ -8,6 +8,7 @@ import { FAQ, Features, VideoPlayer } from "~/containers";
 import { Pricing } from "~/containers/Pricing";
 import { Video } from "lucide-react";
 import AvatarGroup from "~/components/custom/AvatarGroup";
+import { Button } from "~/components/ui/button";
 
 export default async function Home() {
   // const hello = await api.post.hello({ text: "from tRPC" });
@@ -39,17 +40,17 @@ export default async function Home() {
                 and let them seduce the worldr with irresistible allure.
               </p>
               <div className="flex flex-row">
-                <button className="flew-row flex items-center justify-center gap-2 rounded-md border-2 border-solid border-white bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-1 px-8 shadow-md">
+                <Button className="flew-row flex items-center justify-center gap-2 rounded-md border-2 border-solid border-white bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-1 px-8 shadow-md">
+                  <span className="block rounded-md py-1 font-semibold text-white">
+                    Fake it
+                  </span>
                   <Image
                     src="/icon/MagicWand.svg"
                     width={24}
                     height={24}
                     alt="Magic Wand"
                   ></Image>
-                  <span className="block rounded-md py-1 font-semibold text-white">
-                    Fake it
-                  </span>
-                </button>
+                </Button>
               </div>
               <div className="py-8">
                 <AvatarGroup />
