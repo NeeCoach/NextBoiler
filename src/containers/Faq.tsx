@@ -19,7 +19,7 @@ export const FAQ = () => (
         </h2>
       </div>
     </div>
-    <div className="container mx-auto rounded-md border border-white bg-[#ead9e624] p-20">
+    <div className="container mx-auto mb-20 rounded-md border border-white bg-[#ead9e624] p-20 backdrop-blur-[25px]">
       <div className="grid gap-10 lg:grid-cols-2">
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-4">
@@ -35,8 +35,11 @@ export const FAQ = () => (
               </p>
             </div>
             <div className="">
-              <Button className="gap-4" variant="outline">
-                Any questions? Reach out <PhoneCall className="h-4 w-4" />
+              <Button
+                variant="outline"
+                className="gap-4 border border-secondary bg-[#ead9e624] text-secondary"
+              >
+                Sign up today <PhoneCall className="h-4 w-4" />
               </Button>
             </div>
           </div>

@@ -26,7 +26,7 @@ export default async function Home() {
             width={1920}
           />
         </div>
-        {/* <Sparkles /> */}
+        <Sparkles />
         <div className="z-10 mx-10 flex flex-col items-center justify-center md:mx-40 md:flex-row md:gap-16">
           <div className="mt-20 flex h-fit max-w-[515px] animate-slideInFromLeftFadeIn flex-col md:mt-0">
             <Title />
@@ -57,8 +57,8 @@ export default async function Home() {
             <Image
               src="/phone.png"
               alt="tRPC logo"
-              width={580}
-              height={580}
+              width={640}
+              height={640}
               className="z-10 animate-slideInFromRightFadeIn"
               object-fit="cover"
             ></Image>
@@ -79,9 +79,7 @@ export default async function Home() {
       <Features />
       <VideoPlayer />
       <Pricing />
-      <section className="flex h-screen w-full flex-col items-center bg-gradient-to-b  from-rose-950 to-fuchsia-900 p-0">
-        <FAQ />
-      </section>
+      <FAQ />
     </>
   );
 }

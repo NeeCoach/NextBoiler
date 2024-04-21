@@ -8,6 +8,7 @@ import {
   faVideo,
   faCoins,
 } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 interface Feature {
   icon: IconDefinition;
@@ -100,13 +101,13 @@ export const Features = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
-                        stroke-width="2"
+                        strokeWidth="2"
                         stroke="currentColor"
                         className="mr-3 h-5 w-5"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
@@ -120,13 +121,13 @@ export const Features = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
-                        stroke-width="2"
+                        strokeWidth="2"
                         stroke="currentColor"
                         className="mr-3 h-5 w-5"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
@@ -140,13 +141,13 @@ export const Features = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
-                        stroke-width="2"
+                        strokeWidth="2"
                         stroke="currentColor"
                         className="mr-3 h-5 w-5"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
@@ -159,13 +160,13 @@ export const Features = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
-                        stroke-width="2"
+                        strokeWidth="2"
                         stroke="currentColor"
                         className="mr-3 h-5 w-5"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
@@ -179,13 +180,13 @@ export const Features = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
-                        stroke-width="2"
+                        strokeWidth="2"
                         stroke="currentColor"
                         className="mr-3 h-5 w-5"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
@@ -199,13 +200,13 @@ export const Features = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
-                        stroke-width="2"
+                        strokeWidth="2"
                         stroke="currentColor"
                         className="mr-3 h-5 w-5"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
@@ -218,13 +219,13 @@ export const Features = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
-                        stroke-width="2"
+                        strokeWidth="2"
                         stroke="currentColor"
                         className="mr-3 h-5 w-5"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
@@ -238,13 +239,13 @@ export const Features = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
-                        stroke-width="2"
+                        strokeWidth="2"
                         stroke="currentColor"
                         className="mr-3 h-5 w-5"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
@@ -258,13 +259,13 @@ export const Features = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
-                        stroke-width="2"
+                        strokeWidth="2"
                         stroke="currentColor"
                         className="mr-3 h-5 w-5"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
@@ -273,6 +274,9 @@ export const Features = () => {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="z-50 md:mb-12 lg:mb-0">
+              <Image src="/phone.png" width={800} height={800} alt="" />
             </div>
           </div>
         </div>
