@@ -41,7 +41,7 @@ export default async function Home() {
               </p>
               <div className="flex flex-row gap-4">
                 <Button className="flew-row flex items-center justify-center gap-2 rounded-md border-2 border-solid border-white bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-1 px-8 shadow-md">
-                  <span className="block rounded-md py-1 font-semibold text-white">
+                  <span className="block rounded-md py-1 text-lg font-semibold text-white">
                     Fake it
                   </span>
                   <Image
@@ -51,9 +51,9 @@ export default async function Home() {
                     alt="Magic Wand"
                   ></Image>
                 </Button>
-                <span className="my-auto text-center text-base font-semibold text-secondary underline">
-                  Not convinced yet?
-                </span>
+                <a href="#faq" className="my-auto text-center text-lg font-semibold text-secondary underline">
+                    Not convinced yet?
+                </a>
               </div>
               <div className="py-8">
                 <AvatarGroup />
@@ -72,7 +72,7 @@ export default async function Home() {
           </div>
         </div>
         <div className="absolute bottom-0 flex h-60 w-96 animate-pulse flex-row items-end justify-center rounded-full bg-yellow-100 blur-[425.47px]" />
-        <div className="relative z-10 flex flex-col items-center justify-center">
+        <div className="md:absolute md:bottom-0 relative z-10 flex flex-col items-center justify-center">
           <div className="leading-2 text-center font-poppins text-sm font-extralight text-white">
             Compatible with
           </div>
