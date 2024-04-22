@@ -75,4 +75,9 @@
   .text-stroke {
     -webkit-text-stroke: 1px rgb(255, 255, 255);
   }
+  .custom-link {
+    background-color: transparent !important;
+    color: inherit !important;
+    text-decoration: none !important;
+  }
 }

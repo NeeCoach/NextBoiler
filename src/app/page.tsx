@@ -1,12 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Logos, Sparkles, Title } from "~/components/custom";
 import { CreatePost } from "~/components/create-post";
 import { getServerAuthSession } from "~/server/auth";
 import { api } from "~/trpc/server";
-import { FAQ, Features, VideoPlayer } from "~/containers";
-import { Pricing } from "~/containers/Pricing";
-import { PhoneCall, Video } from "lucide-react";
+import { FAQ, Features, VideoPlayer, Pricing } from "~/containers";
 import AvatarGroup from "~/components/custom/AvatarGroup";
 import { Button } from "~/components/ui/button";
 
@@ -28,16 +25,16 @@ export default async function Home() {
           />
         </div>
         <Sparkles />
-        <div className="z-10 mx-10 flex flex-col items-center justify-center md:mx-40 md:flex-row md:gap-8">
-          <div className="mt-20 flex h-fit max-w-[515px] animate-slideInFromLeftFadeIn flex-col md:mt-0">
+        <div className="z-10 mx-10 flex flex-col items-center justify-center md:mx-40 md:flex-row">
+          <div className="mt-20 flex h-fit animate-slideInFromLeftFadeIn flex-col md:mt-0">
             <Title />
-            <div className="mt-3 w-fit">
+            <div className="mt-3 w-fit max-w-[610px]">
               <h3 className="my-4 w-fit font-poppins text-2xl font-semibold text-white">
                 Create your AI agency and become their master!
               </h3>
               <p className="mb-6 font-poppins text-xl font-light text-white opacity-60">
                 Click, create, conquer – deploy your fake army of AI influencers
-                and let them seduce the worldr with irresistible allure.
+                and let them seduce the world with irresistible allure.
               </p>
               <div className="flex flex-row gap-4">
                 <Button className="flew-row flex items-center justify-center gap-2 rounded-md border-2 border-solid border-white bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-1 px-8 shadow-md">
@@ -51,8 +48,11 @@ export default async function Home() {
                     alt="Magic Wand"
                   ></Image>
                 </Button>
-                <a href="#faq" className="my-auto text-center text-lg font-semibold text-secondary underline">
-                    Not convinced yet?
+                <a
+                  href="#faq"
+                  className="my-auto text-center text-lg font-semibold text-secondary underline"
+                >
+                  Not convinced yet?
                 </a>
               </div>
               <div className="py-8">
@@ -60,20 +60,19 @@ export default async function Home() {
               </div>
             </div>
           </div>
-          <div className="z-10 flex min-w-fit flex-col items-center justify-center md:mt-20 ">
+          <div className="z-10 flex min-w-fit flex-col items-center justify-center md:mt-20 lg:ml-12 ">
             <Image
               src="/phone.png"
               alt="tRPC logo"
               width={640}
               height={640}
-              className="z-10 animate-slideInFromRightFadeIn"
-              object-fit="cover"
+              className="z-10 mx-0 animate-slideInFromRightFadeIn"
             ></Image>
           </div>
         </div>
         <div className="absolute bottom-0 flex h-60 w-96 animate-pulse flex-row items-end justify-center rounded-full bg-yellow-100 blur-[425.47px]" />
-        <div className="md:absolute md:bottom-0 relative z-10 flex flex-col items-center justify-center">
-          <div className="leading-2 text-center font-poppins text-sm font-extralight text-white">
+        <div className="relative z-10 flex flex-col items-center justify-center md:absolute md:bottom-0">
+          <div className="leading-2 text-center font-poppins text-base font-extralight text-white">
             Compatible with
           </div>
           <div className="flex flex-row items-center justify-center gap-1">

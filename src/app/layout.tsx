@@ -3,7 +3,6 @@ import "~/styles/globals.css";
 import { Inter } from "next/font/google";
 import { TRPCReactProvider } from "~/trpc/react";
 import { Footer, NavBar } from "~/components/custom";
-import type { Metadata, ResolvingMetadata } from "next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`font-sans ${inter.variable} max-w-screen animate-bg flex flex-col items-center justify-center overscroll-none`}
       >

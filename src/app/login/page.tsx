@@ -1,6 +1,4 @@
-import React from "react";
-import Image from "next/image";
-import { LoginForm, Title } from "~/components/custom";
+import { LoginForm } from "~/components/custom";
 
 const page = () => {
   return (

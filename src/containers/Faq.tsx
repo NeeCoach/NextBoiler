@@ -1,4 +1,4 @@
-import { Check, PhoneCall } from "lucide-react";
+import { PhoneCall } from "lucide-react";
 import {
   Accordion,
   AccordionContent,

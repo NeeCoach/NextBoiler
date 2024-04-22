@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export const NavBar = () => {
   const TOP_OFFSET = 50;
@@ -49,25 +50,25 @@ export const NavBar = () => {
             className="menu dropdown-content menu-sm z-[1] mt-3 w-52 bg-base-100 p-2 shadow"
           >
             <li>
-              <a>Item 1</a>
+              <Link href="">Item 1</Link>
             </li>
             <li>
-              <a>Parent</a>
+              <Link href="">Parent</Link>
               <ul className="p-2">
                 <li>
-                  <a>Submenu 1</a>
+                  <Link href="">Submenu 1</Link>
                 </li>
                 <li>
-                  <a>Submenu 2</a>
+                  <Link href="">Submenu 2</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a>Item 3</a>
+              <Link href="">Item 3</Link>
             </li>
           </ul>
         </div>
-        <a href="/">
+        <Link href="/">
           <Image
             src={`/logo/${!showBackground ? "logo" : "logo-inv"}.png`}
             alt="logo"
@@ -75,48 +76,60 @@ export const NavBar = () => {
             height={150}
             className="hidden lg:block"
           />
-        </a>
+        </Link>
       </div>
       <div className="navbar-center hidden font-poppins lg:flex">
         <ul className="menu menu-horizontal px-1 text-base">
           <li>
-            <a className="rounded-none hover:bg-transparent">
+            <Link
+              href="/"
+              className="custom-link rounded-none hover:cursor-pointer"
+            >
               <span
                 className={`${showBackground ? "underline-animation-fuschia" : "underline-animation"}`}
               >
                 Try it
               </span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="#how-it-works"
-              className="rounded-none hover:bg-transparent"
+              scroll={true}
+              className="custom-link rounded-none hover:cursor-pointer"
             >
               <span
                 className={`${showBackground ? "underline-animation-fuschia" : "underline-animation"}`}
               >
                 How it works
               </span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#pricing" className="rounded-none hover:bg-transparent">
+            <Link
+              href="#pricing"
+              scroll={true}
+              className="custom-link rounded-none hover:cursor-pointer"
+            >
               <span
                 className={`${showBackground ? "underline-animation-fuschia" : "underline-animation"}`}
               >
                 Pricing
               </span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#faq" className="rounded-none hover:bg-transparent">
+            <Link
+              href="#faq"
+              scroll={true}
+              className="custom-link rounded-none decoration-inherit hover:cursor-pointer"
+            >
               <span
                 className={`${showBackground ? "underline-animation-fuschia" : "underline-animation"}`}
               >
                 FAQ
               </span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -125,7 +138,7 @@ export const NavBar = () => {
           variant="outline"
           className={`gap-4 border hover:text-primary ${showBackground ? "border-primary" : "border-secondary"} bg-[#ead9e624] ${showBackground ? "text-primary" : "text-secondary"}`}
         >
-          <a href="/login">Sign In</a>
+          <Link href="/login">Sign In</Link>
         </Button>
       </div>
     </div>

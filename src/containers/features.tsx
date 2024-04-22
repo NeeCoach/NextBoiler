@@ -9,6 +9,7 @@ import {
   faCoins,
 } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import { Check } from "lucide-react";
 
 interface Feature {
   icon: IconDefinition;
@@ -93,182 +94,64 @@ export const Features = () => {
                   neque iaculis malesuada. Aenean gravida magna orci, non
                   efficitur est porta id. Donec magna diam.
                 </p>
-
                 <div className="grid gap-x-6 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
                   <div className="mb-6">
                     <p className="flex items-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="2"
-                        stroke="currentColor"
-                        className="mr-3 h-5 w-5"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M4.5 12.75l6 6 9-13.5"
-                        />
-                      </svg>
+                      <Check size={24} className="mr-3 h-5 w-5" />
                       Support 24/7
                     </p>
                   </div>
 
                   <div className="mb-6">
                     <p className="flex items-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="2"
-                        stroke="currentColor"
-                        className="mr-3 h-5 w-5"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M4.5 12.75l6 6 9-13.5"
-                        />
-                      </svg>
+                      <Check size={24} className="mr-3 h-5 w-5" />
                       Analytics
                     </p>
                   </div>
 
                   <div className="mb-6">
                     <p className="flex items-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="2"
-                        stroke="currentColor"
-                        className="mr-3 h-5 w-5"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M4.5 12.75l6 6 9-13.5"
-                        />
-                      </svg>
+                      <Check size={24} className="mr-3 h-5 w-5" />
                       Components
                     </p>
                   </div>
                   <div className="mb-6">
                     <p className="flex items-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="2"
-                        stroke="currentColor"
-                        className="mr-3 h-5 w-5"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M4.5 12.75l6 6 9-13.5"
-                        />
-                      </svg>
+                      <Check size={24} className="mr-3 h-5 w-5" />
                       Updates
                     </p>
                   </div>
 
                   <div className="mb-6">
                     <p className="flex items-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="2"
-                        stroke="currentColor"
-                        className="mr-3 h-5 w-5"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M4.5 12.75l6 6 9-13.5"
-                        />
-                      </svg>
+                      <Check size={24} className="mr-3 h-5 w-5" />
                       Reports
                     </p>
                   </div>
 
                   <div className="mb-6">
                     <p className="flex items-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="2"
-                        stroke="currentColor"
-                        className="mr-3 h-5 w-5"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M4.5 12.75l6 6 9-13.5"
-                        />
-                      </svg>
+                      <Check size={24} className="mr-3 h-5 w-5" />
                       Mobile
                     </p>
                   </div>
                   <div className="mb-6">
                     <p className="flex items-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="2"
-                        stroke="currentColor"
-                        className="mr-3 h-5 w-5"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M4.5 12.75l6 6 9-13.5"
-                        />
-                      </svg>
+                      <Check size={24} className="mr-3 h-5 w-5" />
                       Modules
                     </p>
                   </div>
 
                   <div className="mb-6">
                     <p className="flex items-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="2"
-                        stroke="currentColor"
-                        className="mr-3 h-5 w-5"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M4.5 12.75l6 6 9-13.5"
-                        />
-                      </svg>
+                      <Check size={24} className="mr-3 h-5 w-5" />
                       Blocks
                     </p>
                   </div>
 
                   <div className="mb-6">
                     <p className="flex items-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="2"
-                        stroke="currentColor"
-                        className="mr-3 h-5 w-5"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M4.5 12.75l6 6 9-13.5"
-                        />
-                      </svg>
+                      <Check size={24} className="mr-3 h-5 w-5" />
                       Templates
                     </p>
                   </div>
@@ -284,42 +167,3 @@ export const Features = () => {
     </section>
   );
 };
-
-// <div className="container mx-auto mt-8 px-28">
-//   <div className="mx-auto mb-12 flex max-w-3xl justify-center text-center">
-//     <div>
-//       <h2 className="text-stroke stroke-white p-6 font-bebas-neue text-7xl leading-none text-transparent md:text-nowrap">
-//         How It Works
-//       </h2>
-//       <p className="font-regular mb-6 text-lg opacity-80">
-//         Under saying our appear Second their heaven created shall darkness
-//         him great kind open creature Deep open had i above.
-//       </p>
-//     </div>
-//   </div>
-//   <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 md:pt-12">
-//     <div className="order-2 col-span-2 text-[#6f2066] lg:order-1 lg:col-span-1">
-//       <div className="lg:mr-6 xl:mr-12">
-//         {features.map((feature, i) => (
-//           <FeatureItem
-//             {...feature}
-//             key={i}
-//             isActive={i === activeIndex}
-//             onMouseEnter={() => setActiveIndex(i)}
-//           />
-//         ))}
-//       </div>
-//     </div>
-//     <div className="z-10 order-1 col-span-2 lg:order-2 lg:col-span-1">
-//       <div className="relative z-10 h-full">
-//         <div className="absolute -right-12 -top-11 bottom-12 left-11 -z-10 rounded-[200px] bg-white opacity-50 lg:rounded-full lg:rounded-tr-none" />
-//         <div
-//           className="float-right h-full min-h-[350px] w-full rounded-2xl bg-cover bg-center bg-no-repeat shadow-xl"
-//           style={{
-//             backgroundImage: `url(${backgroundImageUrls[activeIndex]})`,
-//           }}
-//         ></div>
-//       </div>
-//     </div>
-//   </div>
-// </div>
