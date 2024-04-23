@@ -4,7 +4,7 @@ import { CreatePost } from "~/components/create-post";
 import { getServerAuthSession } from "~/server/auth";
 import { api } from "~/trpc/server";
 import { FAQ, Features, VideoPlayer, Pricing } from "~/containers";
-import AvatarGroup from "~/components/custom/AvatarGroup";
+import AvatarGroup from "~/components/custom/avatarGroup";
 import { Button } from "~/components/ui/button";
 
 export default async function Home() {
@@ -13,7 +13,7 @@ export default async function Home() {
 
   return (
     <>
-      <section className="top-0 z-0 flex h-full w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-900 p-0 md:h-screen">
+      <section className="top-0 z-0 flex h-full w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-900 p-0 pb-8 md:h-screen">
         <div className="absolute top-14 h-[550px] w-full overflow-hidden">
           <Image
             src="/AI.Chicks.svg"

@@ -70,11 +70,11 @@ export const Features = () => {
   return (
     <section
       id="how-it-works"
-      className="flex min-h-fit w-full flex-col bg-gradient-to-b from-fuchsia-900 to-rose-950 py-14 text-white md:py-24"
+      className="flex min-h-fit w-full flex-col bg-gradient-to-b from-fuchsia-900 to-rose-950 text-white"
     >
-      <div className="mx-auto mb-12 flex max-w-3xl justify-center text-center">
+      <div className="mx-auto mb-12 mt-24 flex max-w-3xl justify-center text-center">
         <div>
-          <h2 className="text-stroke stroke-white p-6 font-bebas-neue text-7xl leading-none text-transparent md:text-nowrap">
+          <h2 className="p-6 font-inter text-7xl font-bold tracking-tighter">
             How It Works
           </h2>
           <p className="font-base mb-6 text-lg opacity-80">
@@ -83,7 +83,7 @@ export const Features = () => {
           </p>
         </div>
       </div>
-      <div className="py-12 md:px-6">
+      <div className="md:px-6">
         <div className="container mx-auto xl:px-32">
           <div className="grid items-center lg:grid-cols-2">
             <div className="mb-12 md:mt-12 lg:mb-0 lg:mt-0">

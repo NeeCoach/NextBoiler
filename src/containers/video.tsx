@@ -7,7 +7,7 @@ export const VideoPlayer = () => {
       <div className="container mx-auto mt-8 px-28">
         <div className="mx-auto mb-12 flex max-w-3xl justify-center text-center">
           <div>
-            <h2 className="text-stroke stroke-white p-6 font-bebas-neue text-7xl leading-none text-transparent md:text-nowrap">
+            <h2 className="p-6 font-inter text-7xl font-bold tracking-tighter">
               One video worth a thousand words
             </h2>
             <p className="mb-6 text-base opacity-80">
