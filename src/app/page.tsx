@@ -4,7 +4,7 @@ import { CreatePost } from "~/components/create-post";
 import { getServerAuthSession } from "~/server/auth";
 import { api } from "~/trpc/server";
 import { FAQ, Features, VideoPlayer, Pricing } from "~/containers";
-import AvatarGroup from "~/components/custom/avatarGroup";
+import AvatarGroup from "~/components/custom/AvatarGroup";
 import { Button } from "~/components/ui/button";
 
 export default async function Home() {
