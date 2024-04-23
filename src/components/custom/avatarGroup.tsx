@@ -1,7 +1,7 @@
 import { Star } from "lucide-react";
 import { Avatar, AvatarImage } from "~/components/ui/avatar";
 
-export default function AvatarGroup() {
+export const AvatarGroup = () => {
   return (
     <div className="flex flex-row">
       <div className="mr-4 flex -space-x-3 *:ring-2 *:ring-white">
@@ -38,4 +38,4 @@ export default function AvatarGroup() {
       </div>
     </div>
   );
-}
+};
