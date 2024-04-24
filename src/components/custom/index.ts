@@ -6,6 +6,7 @@ import { NavBar } from "./navBar";
 import { LoginForm } from "./loginForm";
 import { SignupForm } from "./signupForm";
 import { AvatarGroup } from "./avatarGroup";
+import { GlassyCard } from "./glassyCard";
 
 export {
   Title,
@@ -16,4 +17,5 @@ export {
   LoginForm,
   SignupForm,
   AvatarGroup,
+  GlassyCard,
 };

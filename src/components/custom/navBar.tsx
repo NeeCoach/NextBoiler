@@ -120,6 +120,19 @@ export const NavBar = () => {
           </li>
           <li>
             <Link
+              href="/gallery"
+              scroll={true}
+              className="custom-link rounded-none hover:cursor-pointer"
+            >
+              <span
+                className={`${showBackground ? "underline-animation-fuschia" : "underline-animation"}`}
+              >
+                Hall of Fame
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link
               href="#faq"
               scroll={true}
               className="custom-link rounded-none decoration-inherit hover:cursor-pointer"
@@ -127,7 +140,7 @@ export const NavBar = () => {
               <span
                 className={`${showBackground ? "underline-animation-fuschia" : "underline-animation"}`}
               >
-                FAQ
+                F.A.Q
               </span>
             </Link>
           </li>
