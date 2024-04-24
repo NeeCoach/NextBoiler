@@ -1,6 +1,6 @@
-import { Features } from "./Features";
-import { VideoPlayer } from "./Video";
-import { FAQ } from "./Faq";
-import { Pricing } from "./Pricing";
+import { Features } from "./features";
+import { VideoPlayer } from "./video";
+import { FAQ } from "./faq";
+import { Pricing } from "./pricing";
 
 export { Features, VideoPlayer, FAQ, Pricing };

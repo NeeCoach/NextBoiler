@@ -1,11 +1,11 @@
-import { Title } from "./Title";
-import { Logos } from "./Logos";
-import { Footer } from "./Footer";
-import { Sparkles } from "./Sparkles";
-import { NavBar } from "./NavBar";
-import { LoginForm } from "./LoginForm";
-import { SignupForm } from "./SignupForm";
-import { AvatarGroup } from "./AvatarGroup";
+import { Title } from "./title";
+import { Logos } from "./logos";
+import { Footer } from "./footer";
+import { Sparkles } from "./sparkles";
+import { NavBar } from "./navBar";
+import { LoginForm } from "./loginForm";
+import { SignupForm } from "./signupForm";
+import { AvatarGroup } from "./avatarGroup";
 
 export {
   Title,
