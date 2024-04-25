@@ -1,4 +1,4 @@
-import { PhoneCall } from "lucide-react";
+import { Send } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -37,9 +37,9 @@ export const FAQ = () => (
             <div className="">
               <Button
                 variant="outline"
-                className="gap-4 border border-secondary bg-[#ead9e624] text-secondary hover:text-primary"
+                className="gap-2 border border-secondary bg-[#ead9e624] text-secondary hover:text-primary"
               >
-                Sign up today <PhoneCall className="h-4 w-4" />
+                Contact us<Send className="h-4 w-4" />
               </Button>
             </div>
           </div>

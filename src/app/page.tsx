@@ -34,6 +34,7 @@ export default async function Home() {
               <p className="mb-6 font-poppins text-xl font-light text-white opacity-60">
                 Click, create, conquer – deploy your fake army of AI influencers
                 and let them seduce the world with irresistible allure.
+                Nothing to say just a place holder deploy your fake army of AI influencers.
               </p>
               <div className="flex flex-row gap-4">
                 <Button className="flew-row flex items-center justify-center gap-2 rounded-md border-2 border-solid border-white bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-1 px-8 shadow-md">

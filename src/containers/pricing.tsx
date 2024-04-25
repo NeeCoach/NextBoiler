@@ -26,7 +26,7 @@ export const Pricing = () => (
         </div>
       </div>
       <div className="h-min-fit flex w-full flex-col items-center justify-center gap-16 pt-14 text-left md:flex-row">
-        <Card className="hover:subpixel-antialiasedgi flex w-96 flex-col rounded-md border border-white bg-[#ead9e624] antialiased backdrop-blur-[25px] duration-100 ease-linear hover:scale-105 hover:cursor-pointer hover:shadow-2xl ">
+        <Card className="flex w-96 flex-col rounded-md border border-white bg-[#ead9e624] backdrop-blur-[25px] transform-gpu ease-in-out duration-150 hover:scale-105 hover:cursor-pointer hover:shadow-2xl ">
           <CardHeader>
             <CardTitle>
               <span className="flex flex-row items-center gap-4 font-normal text-secondary">
@@ -100,7 +100,7 @@ export const Pricing = () => (
             </div>
           </CardContent>
         </Card>
-        <Card className="hover:subpixel-antialiasedgi flex w-96 flex-col rounded-md border border-white bg-[#ead9e624] antialiased backdrop-blur-[25px] duration-100 ease-linear hover:scale-105 hover:cursor-pointer hover:shadow-2xl ">
+        <Card className="flex w-96 flex-col rounded-md border border-white bg-[#ead9e624] backdrop-blur-[25px] transform-gpu ease-in-out duration-150 hover:scale-105 hover:cursor-pointer hover:shadow-2xl ">
           <CardHeader>
             <CardTitle>
               <span className="flex flex-row items-center gap-4 font-normal text-secondary">
@@ -174,7 +174,7 @@ export const Pricing = () => (
             </div>
           </CardContent>
         </Card>
-        <Card className="hover:subpixel-antialiasedgi flex w-96 flex-col rounded-md border border-white bg-[#ead9e624] antialiased backdrop-blur-[25px] duration-100 ease-linear hover:scale-105 hover:cursor-pointer hover:shadow-2xl ">
+        <Card className="flex w-96 flex-col rounded-md border border-white bg-[#ead9e624] backdrop-blur-[25px] transform-gpu ease-in-out duration-150 hover:scale-105 hover:cursor-pointer hover:shadow-2xl ">
           <CardHeader>
             <CardTitle>
               <span className="flex flex-row items-center gap-4 font-normal text-secondary">

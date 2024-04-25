@@ -71,7 +71,7 @@ function page() {
 			<div className="px-2">
 				<div className="flex flex-row flex-wrap gap-8 justify-center">
 					{galleryJson.map((item, index) => (
-						<GlassyCard className="hover:scale-105 hover:cursor-pointer" key={index} {...item} />
+						<GlassyCard className="hover:scale-105 hover:cursor-pointer transform-gpu ease-in-out duration-150" key={index} {...item} />
 					))}
 				</div>
 			</div>

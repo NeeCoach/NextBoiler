@@ -13,7 +13,7 @@ const config = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "via.placeholder.com",
+        hostname: "**",
         pathname: "**",
       },
     ],
