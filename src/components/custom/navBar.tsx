@@ -131,19 +131,6 @@ export const NavBar = () => {
               </span>
             </Link>
           </li>
-          <li>
-            <Link
-              href="#faq"
-              scroll={true}
-              className="custom-link rounded-none decoration-inherit hover:cursor-pointer"
-            >
-              <span
-                className={`${showBackground ? "underline-animation-fuschia" : "underline-animation"}`}
-              >
-                F.A.Q
-              </span>
-            </Link>
-          </li>
         </ul>
       </div>
       <div className="navbar-end font-poppins">

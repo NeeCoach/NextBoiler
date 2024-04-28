@@ -33,8 +33,9 @@ export default async function Home() {
               </h3>
               <p className="mb-6 font-poppins text-xl font-light text-white opacity-60">
                 Click, create, conquer – deploy your fake army of AI influencers
-                and let them seduce the world with irresistible allure.
-                Nothing to say just a place holder deploy your fake army of AI influencers.
+                and let them seduce the world with irresistible allure. Nothing
+                to say just a place holder deploy your fake army of AI
+                influencers.
               </p>
               <div className="flex flex-row gap-4">
                 <Button className="flew-row flex items-center justify-center gap-2 rounded-md border-2 border-solid border-white bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-1 px-8 shadow-md">
@@ -50,7 +51,7 @@ export default async function Home() {
                 </Button>
                 <a
                   href="#faq"
-                  className="my-auto text-center text-lg font-semibold text-secondary underline"
+                  className="underline-animation my-auto text-center text-lg font-semibold text-secondary"
                 >
                   Not convinced yet?
                 </a>
@@ -62,7 +63,7 @@ export default async function Home() {
           </div>
           <div className="z-10 flex min-w-fit flex-col items-center justify-center md:mt-20 lg:ml-12 ">
             <Image
-              src="/phone.png"
+              src="/phone5.png"
               alt="tRPC logo"
               width={640}
               height={640}
