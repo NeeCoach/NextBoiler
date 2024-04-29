@@ -38,7 +38,7 @@ export default async function Home() {
                 influencers.
               </p>
               <div className="flex flex-row gap-4">
-                <Button className="flew-row flex items-center justify-center gap-2 rounded-md border-2 border-solid border-white bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-1 px-8 shadow-md">
+              <Button className="btn-slide-effect flew-row flex items-center justify-center gap-2 rounded-md border-2 border-solid border-white bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-1 px-8 shadow-md">
                   <span className="block rounded-md py-1 text-lg font-semibold text-white">
                     Fake it
                   </span>
@@ -48,7 +48,8 @@ export default async function Home() {
                     height={24}
                     alt="Magic Wand"
                   ></Image>
-                </Button>
+                  <div className="after-effect absolute bg-white opacity-20 w-12 h-60 -top-[90px] transform transition-all duration-700 ease-in-out rotate-[35deg]"></div>
+               </Button>
                 <a
                   href="#faq"
                   className="underline-animation my-auto text-center text-lg font-semibold text-secondary"
