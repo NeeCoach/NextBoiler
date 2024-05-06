@@ -93,13 +93,18 @@ function page() {
                   alt="image"
                 />
               </div>
-              <div className="absolute inset-0 h-full w-full bg-gradient-to-t from-black text-center text-white opacity-0 [backface-visibility:hidden] [transform:rotateY(180deg)] group-hover:opacity-50">
-                <h1 className="text-3xl font-bold">Jane Doe</h1>
-                <h2 className="text-lg">Click to view more</h2>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+              <div className="absolute inset-0 h-full w-full rounded-2xl bg-gradient-to-t from-black text-center text-white [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                <div className="relative z-50 flex h-full flex-col justify-center rounded-2xl bg-black">
+                  <video
+                    src="https://videos.pexels.com/video-files/4625518/4625518-uhd_2160_3840_30fps.mp4"
+                    // src="/video/mockupVideo1.mp4"
+                    className="h-full rounded-2xl"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
+                </div>
               </div>
             </div>
           </div>
