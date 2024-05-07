@@ -82,8 +82,8 @@ export default async function Home() {
               />
               <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center">
                 <video
-                  src="https://videos.pexels.com/video-files/4625518/4625518-uhd_2160_3840_30fps.mp4"
-                  // src="/video/mockupVideo1.mp4"
+                  // src="https://videos.pexels.com/video-files/4625518/4625518-uhd_2160_3840_30fps.mp4"
+                  src="/video/mockupVideo1.mp4"
                   className="h-full animate-slideInFromRightFadeIn rounded-[44px] object-cover lg:rounded-[44px]"
                   autoPlay
                   loop

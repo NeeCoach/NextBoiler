@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { cn } from "~/lib/utils";
 
-export const GlassyCard = ({ className, ...props }) => {
+export const GlassyCard = ({ className, ...props }: { className: string }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
