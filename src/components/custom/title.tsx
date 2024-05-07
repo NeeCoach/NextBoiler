@@ -1,6 +1,6 @@
 export const Title = () => {
   return (
-    <div className="flex w-fit max-w-[410px] flex-col">
+    <div className="flex w-fit max-w-[410px] flex-col max-md:justify-center max-md:items-center">
       <div className="flex h-fit w-fit flex-col">
         <div className="relative max-h-[210px] w-fit">
           <h1 className="absolute left-[-12px] top-[8px] m-0 whitespace-nowrap p-0 font-bebas-neue text-[26vw] font-normal leading-none text-transparent text-white md:text-[22vw] lg:text-[12vw] 2xl:text-[200px]">

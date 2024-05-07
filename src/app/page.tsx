@@ -62,7 +62,30 @@ export default async function Home() {
               </div>
             </div>
           </div>
-          <div className="flex min-w-[600px] max-w-[680px] flex-row items-center justify-center">
+          <div className="z-10 flex min-w-fit flex-col items-center justify-center md:mt-20 lg:ml-12">
+  {/* Conteneur avec overflow-hidden pour masquer tout ce qui dépasse */}
+              <div className="relative z-50 overflow-hidden">
+                <Image
+                  src="/phone6.png"
+                  alt="tRPC logo"
+                  width={640}
+                  height={640}
+                  className="relative z-50 mx-0 animate-slideInFromRightFadeIn"
+                />
+                <div className="absolute left-64 top-0 flex items-center justify-center">
+                  <video
+                    src="/video/mockupVideo1.mp4"
+                    className="animate-slideInFromRightFadeIn max-sm:rounded-[23px] max-lg:rounded-[46px] object-cover lg:rounded-[44px]"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
+                </div>
+              </div>
+            </div>
+
+          {/* <div className="flex lg:min-w-[600px] max-w-[680px] flex-row items-center justify-center max-md:mx-12">
             <div className="relative z-10 lg:pl-14">
               <Image
                 src="/mockupLeft.png"
@@ -72,7 +95,7 @@ export default async function Home() {
                 className="mx-0 animate-slideInFromRightFadeIn"
               />
             </div>
-            <div className="relative -left-24 z-50">
+            <div className="relative z-50">
               <Image
                 src="/mockupRight.png"
                 alt="Right Mockup"
@@ -82,9 +105,9 @@ export default async function Home() {
               />
               <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center">
                 <video
-                  // src="https://videos.pexels.com/video-files/4625518/4625518-uhd_2160_3840_30fps.mp4"
-                  src="/video/mockupVideo1.mp4"
-                  className="h-full animate-slideInFromRightFadeIn rounded-[44px] object-cover lg:rounded-[44px]"
+                  src="https://videos.pexels.com/video-files/4625518/4625518-uhd_2160_3840_30fps.mp4"
+                  // src="/video/mockupVideo1.mp4"
+                  className="p-1 h-full animate-slideInFromRightFadeIn max-sm:rounded-[23px] max-lg:rounded-[46px]  object-cover lg:rounded-[44px]"
                   autoPlay
                   loop
                   muted
@@ -92,7 +115,7 @@ export default async function Home() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="absolute bottom-0 flex h-60 w-96 animate-pulse flex-row items-end justify-center rounded-full bg-yellow-100 blur-[425.47px]" />
         <div className="relative z-10 mt-24 flex flex-col items-center justify-center lg:absolute lg:bottom-0">
