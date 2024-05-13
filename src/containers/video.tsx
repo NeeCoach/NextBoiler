@@ -10,7 +10,7 @@ export const VideoPlayer = () => {
             <h2 className="p-6 font-inter text-7xl font-bold tracking-tighter">
               One video worth a thousand words
             </h2>
-            <p className="mb-6 text-base opacity-80">
+            <p className="mb-6 text-left text-base opacity-80">
               Under saying our appear Second their heaven created shall darkness
               him great kind open creature Deep open had i above.
             </p>

@@ -13,20 +13,20 @@ export const Pricing = () => (
     id="pricing"
     className="flex h-full w-full flex-col bg-gradient-to-b from-fuchsia-900 to-rose-950 py-14 md:py-20"
   >
-    <div className="container mx-auto px-28">
+    <div className="container mx-auto max-md:px-6 md:px-28">
       <div className="mx-auto flex max-w-3xl justify-center text-center">
         <div>
           <h2 className="p-6 font-inter text-7xl font-bold tracking-tighter">
             Pricing
           </h2>
-          <p className="font-regular text-lg opacity-80">
+          <p className="font-regular text-left text-lg opacity-80">
             Under saying our appear Second their heaven created shall darkness
             him great kind open creature Deep open had i above.
           </p>
         </div>
       </div>
       <div className="h-min-fit flex w-full flex-col items-center justify-center gap-16 pt-14 text-left lg:flex-row">
-        <Card className="flex w-96 transform-gpu flex-col rounded-md border border-white bg-[#ead9e624] backdrop-blur-[25px] duration-150 ease-in-out hover:scale-105 hover:cursor-pointer hover:shadow-2xl lg:w-1/3">
+        <Card className="flex w-fit transform-gpu flex-col rounded-md border border-white bg-[#ead9e624] backdrop-blur-[25px] duration-150 ease-in-out hover:scale-105 hover:cursor-pointer hover:shadow-2xl lg:w-1/3">
           <CardHeader>
             <CardTitle>
               <span className="flex flex-row items-center gap-4 font-normal text-secondary">
@@ -100,7 +100,7 @@ export const Pricing = () => (
             </div>
           </CardContent>
         </Card>
-        <Card className="flex w-96 transform-gpu flex-col rounded-md border border-white bg-[#ead9e624] backdrop-blur-[25px] duration-150 ease-in-out hover:scale-105 hover:cursor-pointer hover:shadow-2xl lg:w-1/3">
+        <Card className="flex w-fit transform-gpu flex-col rounded-md border border-white bg-[#ead9e624] backdrop-blur-[25px] duration-150 ease-in-out hover:scale-105 hover:cursor-pointer hover:shadow-2xl lg:w-1/3">
           <CardHeader>
             <CardTitle>
               <span className="flex flex-row items-center gap-4 font-normal text-secondary">
@@ -174,7 +174,7 @@ export const Pricing = () => (
             </div>
           </CardContent>
         </Card>
-        <Card className="flex w-96 transform-gpu flex-col rounded-md border border-white bg-[#ead9e624] backdrop-blur-[25px] duration-150 ease-in-out hover:scale-105 hover:cursor-pointer hover:shadow-2xl lg:w-1/3">
+        <Card className="flex w-fit transform-gpu flex-col rounded-md border border-white bg-[#ead9e624] backdrop-blur-[25px] duration-150 ease-in-out hover:scale-105 hover:cursor-pointer hover:shadow-2xl lg:w-1/3">
           <CardHeader>
             <CardTitle>
               <span className="flex flex-row items-center gap-4 font-normal text-secondary">

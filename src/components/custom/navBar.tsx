@@ -120,6 +120,19 @@ export const NavBar = () => {
           </li>
           <li>
             <Link
+              href="#pricing"
+              scroll={true}
+              className="custom-link rounded-none hover:cursor-pointer"
+            >
+              <span
+                className={`${showBackground ? "underline-animation-fuschia" : "underline-animation"}`}
+              >
+                Affiliate
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/shop"
               scroll={true}
               className="custom-link rounded-none hover:cursor-pointer"
