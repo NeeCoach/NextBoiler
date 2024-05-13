@@ -10,7 +10,7 @@ import { Button } from "~/components/ui/button";
 export const FAQ = () => (
   <section
     id="faq"
-    className="flex min-h-fit w-full flex-col bg-gradient-to-b from-rose-950 to-fuchsia-900 py-14 text-white max-md:px-4 md:px-14 md:py-24"
+    className="z-50 flex min-h-fit w-full flex-col bg-gradient-to-b from-rose-950 to-fuchsia-900 py-14 text-white max-md:px-4 md:px-14 md:py-24"
   >
     <div className="container mx-auto mt-8 px-28">
       <div className="mx-auto mb-12 flex max-w-3xl justify-center text-center">
