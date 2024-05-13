@@ -19,7 +19,7 @@ export const FAQ = () => (
         </h2>
       </div>
     </div>
-    <div className="z-50 mb-20 rounded-md border border-white bg-[#ead9e624] py-4 backdrop-blur-[25px] max-md:px-4 md:px-8 md:py-14">
+    <div className="z-40 mb-20 rounded-md border border-white bg-[#ead9e624] py-4 backdrop-blur-[25px] max-md:px-4 md:px-8 md:py-14">
       <div className="grid gap-10 lg:grid-cols-2">
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-4">
