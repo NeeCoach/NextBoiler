@@ -18,7 +18,7 @@ export default async function Home() {
             src="/AI.Chicks.svg"
             alt="banner"
             quality={100}
-            className="object-contain"
+            className="w-full object-contain"
             height={550}
             width={1920}
           />
