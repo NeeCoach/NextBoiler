@@ -7,6 +7,7 @@ import { LoginForm } from "./loginForm";
 import { SignupForm } from "./signupForm";
 import { AvatarGroup } from "./avatarGroup";
 import { GlassyCard } from "./glassyCard";
+import { CTA } from "./cta";
 
 export {
   Title,
@@ -18,4 +19,5 @@ export {
   SignupForm,
   AvatarGroup,
   GlassyCard,
+  CTA,
 };

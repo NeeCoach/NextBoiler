@@ -85,8 +85,7 @@ function page() {
           {galleryJson.map((item, index) => (
             <GlassyCard
               imageUrl="https://images.unsplash.com/photo-1713204641929-13d89fc98651"
-              // videoUrl="/video/Untitled2.mp4"
-              videoUrl="https://videos.pexels.com/video-files/15921892/15921892-uhd_3840_2160_50fps.mp4"
+              videoUrl="/video/Untitled2.mp4"
               className="my-4"
               id="1"
               key={index}
