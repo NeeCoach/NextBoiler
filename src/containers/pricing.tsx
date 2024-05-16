@@ -7,7 +7,6 @@ import {
   CardTitle,
 } from "~/components/ui/card";
 import { Button } from "~/components/ui/button";
-import { CTA } from "~/components/custom";
 
 export const Pricing = () => (
   <section
