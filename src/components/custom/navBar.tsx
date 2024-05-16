@@ -94,7 +94,7 @@ export const NavBar = () => {
           </li>
           <li>
             <Link
-              href="#how-it-works"
+              href="/#how-it-works"
               scroll={true}
               className="custom-link rounded-none hover:cursor-pointer"
             >
@@ -107,7 +107,7 @@ export const NavBar = () => {
           </li>
           <li>
             <Link
-              href="#pricing"
+              href="/#pricing"
               scroll={true}
               className="custom-link rounded-none hover:cursor-pointer"
             >
@@ -120,7 +120,7 @@ export const NavBar = () => {
           </li>
           <li>
             <Link
-              href="#pricing"
+              href="/#pricing"
               scroll={true}
               className="custom-link rounded-none hover:cursor-pointer"
             >

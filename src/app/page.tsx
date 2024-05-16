@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { AvatarGroup, CTA, Logos, Sparkles, Title } from "~/components/custom";
+import { AvatarGroup, Logos, Sparkles, Title } from "~/components/custom";
 import { CreatePost } from "~/components/create-post";
 import { getServerAuthSession } from "~/server/auth";
 import { api } from "~/trpc/server";
@@ -11,7 +11,7 @@ export default async function Home() {
   // const session = await getServerAuthSession();
 
   return (
-    <>
+    <div className="h-full w-full">
       <section className="top-0 z-0 flex h-full w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-900 p-0 pb-8 lg:h-screen">
         <div className="absolute top-14 h-[550px] w-full overflow-hidden">
           <Image
@@ -101,7 +101,7 @@ export default async function Home() {
       <VideoPlayer />
       <Pricing />
       <FAQ />
-    </>
+    </div>
   );
 }
 

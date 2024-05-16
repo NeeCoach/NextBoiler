@@ -79,9 +79,12 @@ const galleryJson = [
 
 function page() {
   return (
-    <div className="flex h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-900 p-0 py-32">
-      <div className="px-2">
-        <div className="flex flex-row flex-wrap justify-center gap-8">
+    <div className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-900 p-0 py-32">
+      <div className="flex flex-col m-4 px-2 z-40 rounded-md border border-white bg-[#ead9e624] py-4 backdrop-blur-[25px] max-md:px-4 md:px-2 justify-center items-center md:mx-36">
+        <h2 className="p-6 font-inter text-7xl font-bold tracking-tighter py-8">
+          Meet our girls
+        </h2>
+        <div className="flex flex-row flex-wrap justify-center gap-8 ">
           {galleryJson.map((item, index) => (
             <GlassyCard
               imageUrl="https://images.unsplash.com/photo-1713204641929-13d89fc98651"
