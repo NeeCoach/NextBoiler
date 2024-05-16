@@ -12,9 +12,9 @@ const imageUrls = [
 
 function Page() {
   return (
-    <div className="flex h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-900 p-0 py-32">
-      <div className="z-40 rounded-md border border-white bg-[#ead9e624] py-4 backdrop-blur-[25px] max-md:px-4 md:px-8 md:py-14 md:mx-14">
-        <div className="flex flex-row gap-8">
+    <div className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-900 p-0 py-28">
+      <div className="z-40 rounded-md border border-white bg-[#ead9e624] py-4 backdrop-blur-[25px] max-md:px-4 md:px-8 md:py-14 md:mx-14 max-md:my-2 max-md:mx-8">
+        <div className="flex max-md:flex-col flex-row gap-8">
           <div className="flex flex-col gap-2">
             <Image
               src="/assets/growth.png"
@@ -39,8 +39,8 @@ function Page() {
                 <Image
                   src={url}
                   alt={`Gallery image ${index + 1}`}
-                  layout="fill"
-                  objectFit="cover"
+                  width={100}
+                  height={100}
                   className="rounded-md"
                 />
               </div>

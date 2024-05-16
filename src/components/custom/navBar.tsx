@@ -47,24 +47,32 @@ export const NavBar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu dropdown-content menu-sm z-[1] mt-3 w-52 bg-base-100 p-2 shadow"
+            className="menu dropdown-content menu-sm z-[1] mt-3 w-52 bg-base-100 p-2 shadow text-primary rounded-md"
           >
             <li>
-              <Link href="">Item 1</Link>
+              <Link href="/" className="hover:text-fuchsia-700">
+                Try it
+              </Link>
             </li>
             <li>
-              <Link href="">Parent</Link>
-              <ul className="p-2">
-                <li>
-                  <Link href="">Submenu 1</Link>
-                </li>
-                <li>
-                  <Link href="">Submenu 2</Link>
-                </li>
-              </ul>
+              <Link href="/#how-it-works" className="hover:text-fuchsia-700">
+                How it works
+              </Link>
             </li>
             <li>
-              <Link href="">Item 3</Link>
+              <Link href="/#pricing" className="hover:text-fuchsia-700">
+                Pricing
+              </Link>
+            </li>
+            <li>
+              <Link href="/#affiliate" className="hover:text-fuchsia-700">
+                Affiliate
+              </Link>
+            </li>
+            <li>
+              <Link href="/shop" className="hover:text-fuchsia-700">
+                Shop of Fame
+              </Link>
             </li>
           </ul>
         </div>
