@@ -11,7 +11,7 @@ export default async function Home() {
   // const session = await getServerAuthSession();
 
   return (
-    <div className="h-full w-full">
+    <>
       <section className="top-0 z-0 flex h-full w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-900 p-0 pb-8 lg:h-screen">
         <div className="absolute top-14 h-[550px] w-full overflow-hidden">
           <Image
@@ -67,8 +67,8 @@ export default async function Home() {
               <Image
                 src="/phone6.png"
                 alt="tRPC logo"
-                width={640}
-                height={640}
+                width={540}
+                height={540}
                 className="relative z-50 mx-0 animate-slideInFromRightFadeIn"
               />
               <div className="absolute left-[42%] top-[3%] flex h-[88%] w-[57%] items-center justify-center rounded-t-[44px] max-md:rounded-[10%]">
@@ -101,7 +101,7 @@ export default async function Home() {
       <VideoPlayer />
       <Pricing />
       <FAQ />
-    </div>
+    </>
   );
 }
 
