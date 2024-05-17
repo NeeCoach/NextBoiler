@@ -15,9 +15,9 @@ function Page() {
   const [selectedImage, setSelectedImage] = useState<number>(0);
 
   return (
-    <div className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-900 p-0 py-28">
-      <div className="z-40 rounded-md border border-white bg-[#ead9e624] py-4 backdrop-blur-[25px] max-md:px-4 md:px-8 md:py-14 md:mx-14 max-md:my-2 max-md:mx-8 shadow-xl">
-        <div className="flex max-md:flex-col flex-row gap-8">
+    <div className="flex h-full min-h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-900 p-0 py-28">
+      <div className="z-40 rounded-md border border-white bg-[#ead9e624] py-4 shadow-xl backdrop-blur-[25px] max-md:mx-8 max-md:my-2 max-md:px-4 md:mx-14 md:px-8 md:py-14">
+        <div className="flex flex-row gap-8 max-md:flex-col">
           <div className="flex flex-col gap-2">
             <Image
               src="/assets/growth.png"
@@ -37,9 +37,9 @@ function Page() {
             </p>
           </div>
           <div className="flex flex-col gap-4">
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col items-center justify-center">
               <Image
-                src={imageUrls[selectedImage] as string}
+                src={imageUrls[selectedImage]!}
                 alt="Selected Preview"
                 quality={100}
                 height={350}
@@ -47,7 +47,7 @@ function Page() {
                 className="inset-0 rounded-md border-2 border-solid border-secondary shadow-md"
               />
             </div>
-            <div className="flex flex-wrap gap-2 h-fit max-md:justify-center">
+            <div className="flex h-fit flex-wrap gap-2 max-md:justify-center">
               {imageUrls.map((url, index) => (
                 <div
                   key={index}
@@ -64,7 +64,6 @@ function Page() {
                   {selectedImage === index && (
                     <div className="absolute inset-0 rounded-md border-2 border-solid border-secondary"></div>
                   )}
-                  
                 </div>
               ))}
             </div>

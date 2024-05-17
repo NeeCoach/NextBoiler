@@ -27,7 +27,7 @@ export const GlassyCard: React.FC<GlassyCardProps> = ({
   return (
     <div
       className={cn(
-        "relative h-80 w-64 cursor-pointer rounded-md bg-white",
+        "relative h-80 w-64 cursor-pointer overflow-hidden rounded-md bg-white",
         className,
       )}
       onMouseEnter={() => setIsHovered(true)}
@@ -50,7 +50,7 @@ export const GlassyCard: React.FC<GlassyCardProps> = ({
             alt="car!"
             height={384}
             width={256}
-            className="max-h-80 rounded-md object-cover"
+            className="h-full w-full rounded-md object-cover"
           />
         )}
         <div className="absolute bottom-0 flex h-12 w-full flex-row justify-start rounded-b-md bg-secondary/90 p-2 text-left font-semibold text-primary">
