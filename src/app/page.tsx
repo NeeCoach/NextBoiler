@@ -73,8 +73,8 @@ export default async function Home() {
               />
               <div className="absolute left-[42%] top-[3%] flex h-[88%] w-[57%] items-center justify-center rounded-t-[44px] max-md:rounded-[10%]">
                 <video
-                  // src="/video/Untitled2.mp4"
-                  src="https://videos.pexels.com/video-files/15921892/15921892-uhd_3840_2160_50fps.mp4"
+                  src="/video/Untitled2.mp4"
+                  // src="https://videos.pexels.com/video-files/15921892/15921892-uhd_3840_2160_50fps.mp4"
                   className="h-full w-full animate-slideInFromRightFadeIn rounded-t-[44px] object-cover max-md:rounded-t-[10%]"
                   autoPlay
                   loop
