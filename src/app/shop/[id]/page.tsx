@@ -31,7 +31,7 @@ function Page() {
         <div className="flex flex-row gap-8 max-md:flex-col">
           <div className="flex flex-col gap-2">
             <Image
-              src={model.photoUrls[0]}
+              src={model.photoUrls[0] ?? "/path/to/default/image.jpg"}
               alt="Model Image"
               quality={100}
               height={350}
@@ -48,7 +48,7 @@ function Page() {
             <div className="flex flex-col items-center justify-center">
               <Image
                 src={
-                  model.photoUrls[selectedImage] || "/path/to/default/image.jpg"
+                  model.photoUrls[selectedImage] ?? "/path/to/default/image.jpg"
                 }
                 alt="Selected Preview"
                 quality={100}
