@@ -15,10 +15,10 @@ export const AvatarGroup = () => {
           <AvatarImage src="https://preview.redd.it/new-gpt-super-avatar-creator-upload-3-selfies-and-get-v0-veruy5hcsidc1.jpg?width=1024&format=pjpg&auto=webp&s=c2d20b635ccc9874ef87e385b6d20fdbdae4e849" />
         </Avatar>
         <Avatar>
-          <AvatarImage src="/avatar2.png" />
+          <AvatarImage src={"assets/avatar2.png"} />
         </Avatar>
         <Avatar>
-          <AvatarImage src="/avatar1.png" />
+          <AvatarImage src={"assets/avatar1.png"} />
         </Avatar>
       </div>
       <div className="flex flex-col justify-center">
