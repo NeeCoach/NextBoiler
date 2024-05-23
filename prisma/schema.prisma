@@ -80,13 +80,13 @@ model Model {
     user        User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
     photoUrls   String[]
     videoUrls   String[]
-    tags        ModelTag[] // Relation to ModelTag
+    tags        ModelTag[]
 }
 
 model Tag {
     id    String  @id @default(cuid()) @map("_id")
     name  String  @unique
-    models ModelTag[] // Relation to ModelTag
+    models ModelTag[]
 }
 
 model ModelTag {
