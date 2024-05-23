@@ -10,7 +10,7 @@ import { Button } from "~/components/ui/button";
 export const FAQ = () => (
   <section
     id="faq"
-    className="flex min-h-fit w-full flex-col bg-gradient-to-b from-rose-950 to-fuchsia-900 py-14 text-white max-md:px-4 md:px-14 md:py-12"
+    className="flex min-h-fit w-full flex-col items-center justify-center bg-gradient-to-b from-rose-950 to-fuchsia-900 py-14 text-white max-md:px-4 md:px-14 md:py-12"
   >
     <div className="container mx-auto mt-8 px-28">
       <div className="mx-auto mb-12 flex max-w-3xl justify-center text-center">
@@ -19,7 +19,7 @@ export const FAQ = () => (
         </h2>
       </div>
     </div>
-    <div className="z-40 mb-20 rounded-md border border-white bg-[#ead9e624] py-4 backdrop-blur-[25px] max-md:px-4 md:px-8 md:py-14">
+    <div className="z-40 mb-20 w-3/4 rounded-md border border-white bg-[#ead9e624] py-4 backdrop-blur-[25px] max-md:px-4 md:px-8 md:py-14">
       <div className="grid gap-10 lg:grid-cols-2">
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-4">

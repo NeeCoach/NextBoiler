@@ -10,6 +10,8 @@ import image3 from "public/assets/reflecting.png";
 import image4 from "public/assets/looking-ahead.png";
 import { type StaticImageData } from "next/image";
 import Image from "next/image";
+import { BentoGrid } from "~/components/ui/bentoGrid";
+import { BentoGridThirdDemo } from "~/components/custom/bentoGridFeatures";
 
 interface FeatureProps {
   title: string;
@@ -38,18 +40,6 @@ const features: FeatureProps[] = [
   },
 ];
 
-const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
-];
-
 export const Features = () => {
   return (
     <section
@@ -68,8 +58,7 @@ export const Features = () => {
         </div>
       </div>
 
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {features.map(({ title, description, image }: FeatureProps) => (
+      {/* {features.map(({ title, description, image }: FeatureProps) => (
           <Card
             className="border border-white bg-[#ead9e624] backdrop-blur-[25px]"
             key={title}
@@ -92,8 +81,8 @@ export const Features = () => {
               />
             </CardFooter>
           </Card>
-        ))}
-      </div>
+        ))} */}
+      <BentoGridThirdDemo />
     </section>
   );
 };

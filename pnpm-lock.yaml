@@ -35,6 +35,9 @@ dependencies:
   '@t3-oss/env-nextjs':
     specifier: ^0.9.2
     version: 0.9.2(typescript@5.4.3)(zod@3.22.4)
+  '@tabler/icons-react':
+    specifier: ^3.5.0
+    version: 3.5.0(react@18.2.0)
   '@tanstack/react-query':
     specifier: ^5.25.0
     version: 5.28.6(react@18.2.0)
@@ -927,6 +930,19 @@ packages:
       '@t3-oss/env-core': 0.9.2(typescript@5.4.3)(zod@3.22.4)
       typescript: 5.4.3
       zod: 3.22.4
+    dev: false
+
+  /@tabler/icons-react@3.5.0(react@18.2.0):
+    resolution: {integrity: sha512-bn05XKZV3ZfOv5Jr1FCTmVPOQGBVJoA4NefrnR919rqg6WGXAa08NovONHJGSuMxXUMV3b9Cni85diIW/E9yuw==}
+    peerDependencies:
+      react: '>= 16'
+    dependencies:
+      '@tabler/icons': 3.5.0
+      react: 18.2.0
+    dev: false
+
+  /@tabler/icons@3.5.0:
+    resolution: {integrity: sha512-I53dC3ZSHQ2MZFGvDYJelfXm91L2bTTixS4w5jTAulLhHbCZso5Bih4Rk/NYZxlngLQMKHvEYwZQ+6w/WluKiA==}
     dev: false
 
   /@tanstack/query-core@5.28.6:
